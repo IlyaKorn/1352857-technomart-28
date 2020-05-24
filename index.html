@@ -7,10 +7,15 @@
   <body>
    <header> 
     <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт" >
-     Поиск:<!--Это тэг формы-->
-     Закладки:
-     Корзина:
-     Оформить заказ <!--Это тэг формы-->
+    <form action="https://echo.htmlacademy.ru" method="post">
+     <img src="img/icon-search.svg" alt="Иконка поиска">
+     <label for="search">
+      Поиск<input id="search" type="search"> <!--пока непонятно, как корректно задать эту форму и почему она не отображается-->
+     </label>
+    </form>
+     <a href="#">Закладки:</a>
+     <a href="#">Корзина:</a>
+     <a href="#">Оформить заказ</a>
     <div>
      <h1>
       Интернет-магазин<br> 
@@ -23,8 +28,8 @@
      г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </div>
     <ul>
-     <li><a href="#">Войти</a></li>  <!--ссылка на авторизацию в ЛК-->
-     <li><a href="#">Регистрация</a></li>  <!--ссылка на регистрацию пользователя-->
+     <li><button>Войти</button></li>  <!--ссылка на авторизацию в ЛК-->
+     <li><button>Регистрация</button></li>  <!--ссылка на регистрацию пользователя-->
     </ul>
     <ul>
      <li><a href="index.html">Главная</a></li>
@@ -72,6 +77,7 @@
      <ul>
       <li>
        <h3>
+        <img src="img/bfg9000.png" alt="Перфоратор BOSCH bfg9000"><br>
         Перфоратор BOSCH<br>
         BFG 9000
        </h3>
@@ -82,6 +88,7 @@
       </li>
       <li>
        <h3>
+        <img src="img/bfg3000.png" alt="Перфоратор BOSCH bfg3000"><br>
         Перфоратор BOSCH<br>
         BFG 3000
        </h3>
@@ -92,6 +99,7 @@
       </li>
       <li>
        <h3>
+        <img src="img/bfg6000.png" alt="Перфоратор BOSCH bfg6000"><br>
         Перфоратор BOSCH<br>
         BFG 6000
        </h3>
@@ -102,6 +110,7 @@
       </li>
       <li>
        <h3>
+        <img src="img/bfg2000.png" alt="Перфоратор BOSCH bfg2000"><br>
         Перфоратор BOSCH<br>
         BFG 2000
        </h3>
@@ -115,14 +124,14 @@
      <h2>Популярные производители:</h2>
      <p>Все производители</p>
      <ul>
-      <li><img src="#" alt="BOSCH"></li>
-      <li><img src="#" alt="MAKITA"></li>
-      <li><img src="#" alt="DEWALT"></li>
-      <li><img src="#" alt="ИНТЕРСКОЛ"></li>
-      <li><img src="#" alt="HITACHI"></li>
-      <li><img src="#" alt="LG"></li>
-      <li><img src="#" alt="AEG"></li>
-      <li><img src="#" alt="METABO"></li>
+      <li><img src="img/bosch.png" alt="Логотип BOSCH"></li>
+      <li><img src="img/makita.png" alt="Логотип MAKITA"></li>
+      <li><img src="img/dewalt.png" alt="Логотип DEWALT"></li>
+      <li><img src="img/interskol.png" alt=" Логотип ИНТЕРСКОЛ"></li>
+      <li><img src="img/hitachi.png" alt="Логотип HITACHI"></li>
+      <li><img src="img/lg.png" alt=" Логотип LG"></li>
+      <li><img src="img/aeg.png" alt="Логотип AEG"></li>
+      <li><img src="img/metabo.png" alt="Логотип METABO"></li>
      </ul>
     </section>
     <section>
@@ -131,19 +140,25 @@
       Хороший интернет-магазин отличается от плохого не только ценами!<br>
       Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
      </p>
-     <ul>
-      <li>Доствка</li>
-      <li>Гарантия</li>
-      <li>Кредит</li>
-     </ul>
+     <form action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+       <label for="Доставка">
+        Доставка<input id="Доставка" type="radio" name="Переключатели" checked>
+       </label>
+       <label for="Гарантия">
+        Гарантия<input id="Гарантия" type="radio" name="Переключатели" value="#">
+       </label>
+       <label for="Кредит">
+        Кредит<input id="Кредит" type="radio" name="Переключатели" value="#">
+       </label>
+      </fieldset>
+     </form>
      <h2>Доставка</h2>
-     <p>
-      Мы с удовольствием доставим ваш товар прямо<br>
-      к вашему подъезду совершенно бесплатно!<br>
-      Ведь мы неплохо заработаем,<br>
-      поднимая его на ваш этаж!
-     </p>
-     <img src="#" alt="Грузовик доставки">
+     Мы с удовольствием доставим ваш товар прямо<br>
+     к вашему подъезду совершенно бесплатно!<br>
+     Ведь мы неплохо заработаем,<br>
+     поднимая его на ваш этаж!<br>
+     <img src="img/car.png" alt="Грузовик доставки">
     </section>
     <section>
      <h2>Компания техномарт»</h2>
@@ -212,8 +227,27 @@
     </p>
     <p>
      Разработано -<br>
-     <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+     <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
     </p>
    </footer>
+   <!--форма отправки фидбэка-->
+   <form action="https://echo.htmlacademy.ru" method="post">
+    <fieldset>
+     <legend>Модальное окно обратной связи</legend>
+     <label for="login-entry">
+      Ваше имя:<input id="login-entry" type="text" name="Логин и пароль" placeholder="Имя Фамилия" required>
+     </label>
+     <label for="email-entry">
+       Ваш e-mail:<input id="email-entry" type="email" name="Ваш e-mail" placeholder="email@example.com" required>
+     </label>
+     <p>Текс письма:</p>
+     <textarea id="text-entry" name="Текс письма" required>В свободной форме</textarea><br>
+     <button type="submit">Отправить</button>
+     </fieldset>
+     <fieldset>
+       <legend>Модальное окно c большой картинкой при нажатии на карту</legend>
+       <input type="image" src="img/map.png" alt="Адрес магазина на карте">
+     </fieldset>
+   </form>
  </body>
  </html>

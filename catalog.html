@@ -7,66 +7,105 @@
   <body>
    <header> 
     <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт" >
-    <ul>
-     <li>Поиск:</li> <!--Это тэг формы-->
-     <li><a href="#">Закладки:</a></li>
-     <li><a href="#">Корзина:</a></li>
-     <li>Оформить заказ</li> <!--Это тэг формы-->
-    </ul>
-    <div>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</div>
-    <div><b>+7 (812) 555-05-55</b><br>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+    <form action="https://echo.htmlacademy.ru" method="post">
+     <img src="img/icon-search.svg" alt="Иконка поиска">
+     <label for="search">
+      Поиск<input id="search" type="search"> <!--пока непонятно, как корректно задать эту форму и почему она не отображается-->
+     </label>
+    </form>
+     <a href="#">Закладки:</a>
+     <a href="#">Корзина:</a>
+     <a href="#">Оформить заказ</a>
     <div>
-     <ul>
-       <li><a href="#">Войти</a></li>  <!--ссылка на авторизацию в ЛК-->
-       <li><a href="#">Регистрация</a></li>  <!--ссылка на регистрацию пользователя-->
-     </ul>
+     <h1>
+      Интернет-магазин<br> 
+      строительных материалов<br> 
+      и инструментов для ремонта
+     </h1>
     </div>
-    <nav>
-     <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Компания</a></li> <!--ссылка на раздел о Компании-->
-      <li><a href="#">Каталог</a></li>  <!--ссылка в Каталог-->
-      <li><a href="#">Новости</a></li>  <!--ссылка на раздел Новости-->
-      <li><a href="#">Спецпредложения</a></li> <!--ссылка на раздел Спецпредложения-->
-      <li><a href="#">Доставка</a></li> <!--ссылка на раздел Доставка-->
-      <li><a href="#">Контакты</a></li> <!--ссылка на раздел Контакты-->
-     </ul>
-    </nav>
-    </header>
-    <main>
-     <nav>
-      <ul>
-       <li><a href="index.html">Главная</a></li>  <!--здесь будет значок для перехода на главную страницу-->
-       <li><a href="catalog.html">Каталог</a></li>
-       <li><a href="#">Инструмент</a></li>
-       <li><a href="#">Перфораторы</a></li>
-      </ul>
-     </nav>
+    <div>
+     +7 (812) 555-05-55<br>
+     г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    </div><br>
+    <button>Равшан Джамшутович</button>
+    <ul>
+     <li><a href="#">Мои заказы</a>
+     <li><a href="#">Личный кабинет</a>
+    </ul>
+    <ul>
+     <li><a href="index.html">Главная</a></li>
+     <li><a href="#">Компания</a></li> <!--ссылка на раздел о Компании-->
+     <li><a href="#">Каталог</a></li>  <!--ссылка в Каталог-->
+     <li><a href="#">Новости</a></li>  <!--ссылка на раздел Новости-->
+     <li><a href="#">Спецпредложения</a></li> <!--ссылка на раздел Спецпредложения-->
+     <li><a href="#">Доставка</a></li> <!--ссылка на раздел Доставка-->
+     <li><a href="#">Контакты</a></li> <!--ссылка на раздел Контакты-->
+    </ul>
+   </header>
+   <main>
      <h1>Перфораторы</h1>
-     <p>Фильтр:</p>
-     <h3>Цена:</h3>
-     <!--здесь будет фильтр товаров-->
-     <ul>
-      <li>Сортировка:</li>
-      <li><a href="#">По цене</a></li>
-      <li><a href="#">По типу</a></li>
-      <li><a href="#">По функционалу</a></li>
-     </ul>
-     <!--здесь будет еще галочки и необходимо будет настроить сортировку-->
+     <p>Сортировка:</p>
+     <form>
+      <fieldset>
+       <legend>Форма сортировки товара</legend>
+       <label for="По-цене">
+        По цене<input id="По-цене" type="radio" name="sorting-radio" value="#">
+       </label>
+       <label for="По-типу">
+       По типу<input id="По-типу" type="radio" name="sorting-radio" value="#">
+       </label>
+       <label for="По-функционалу">
+       По функционалу<input id="По-функционалу" type="radio" name="sorting-radio" value="#">
+       </label>
+      </fieldset>
+      <nav>
+       <ul>
+        <li><a href="index.html">Главная</a></li>  <!--здесь будет значок для перехода на главную страницу-->
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Перфораторы</a></li>
+       </ul>
+      </nav>
+      <p>Фильтр</p>
+      <fieldset>
+       <legend>Форма филтра товара по цене</legend>
+       <label for="price-range">
+        Цена<input id="price-range" type="range" min="0" max="30000" step="250" value="28000">
+       </label>
+       <input id="price-number" type="number" min="0" max="30000" step="250">-
+       <input type="number" min="0" max="30000" step="250">
+      </fieldset>
      <h3>Производители:</h3>
-     <ul>
-      <li>BOSCH</li>
-      <li>ИНТЕРСКОЛ</li>
-      <li>MAKITA</li>
-      <li>DEWALT</li>
-      <li>HITACHI</li>
-     </ul>
-     <h3>Питание:</h3>
-      <ul>
-       <li>Аккумуляторные</li>
-       <li>Сетевые</li>
-      </ul>
+     <fieldset>
+      <legend>Форма фильтра по производителям</legend>
+      <label for="checkbox-bosch">
+       Bosch<input id="checkbox-bosch" type="checkbox" checked>
+      </label>
+      <label for="checkbox-interskol">
+       Интерскол<input id="checkbox-interskol" type="checkbox">
+      </label>
+      <label for="checkbox-makita">
+       Makita<input id="checkbox-makita" type="checkbox" checked>
+      </label>
+      <label>
+       Dewalt<input id="checkbox-dewalt" type="checkbox">
+      </label>
+      <label>
+       Hitachi<input id="checkbox-hitachi" type="checkbox">
+      </label>
+     </fieldset>
+      <h3>Питание:</h3>
+      <fieldset>
+       <legend>Форма фильтра товара по типу питания</legend>
+       <label for="Аккамуляторные">
+        Аккамуляторные<input id="Аккамуляторные" type="radio" name="radio-pitane" value="Аккамуляторные">
+       </label>
+       <label for="Сетевые">
+        Сетевые<input id="Сетевые" type="radio" name="radio-pitane" value="Сетевые"><br>
+       </label>
+      </fieldset>
       <button>Показать</button>
+     </form>
       <ul>
        <li>
         <img src="img/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
@@ -179,8 +218,23 @@
      </p>
      <p>
       Разработано -<br>
-      <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
      </p>
    </footer>
+   <form action="https://echo.htmlacademy.ru" method="post">
+    <fieldset>
+      <legend>Форма по наведению курсора на товар</legend>
+      <button type="submit">Купить</button>
+      <button type="submit">В закладки</button>
+    </fieldset>
+   </form>
+   <form>
+     <fieldset>
+       <legend>Форма поп-ап при добавлении товара в корзину</legend>
+       <p>Товар добавлен в корзину!</p>
+       <button type="submit">Оформить заказ</button>
+       <button type="submit">Продолжить покупки</button>
+     </fieldset>
+   </form>
   </body>
 </html>
