@@ -1,0 +1,305 @@
+:root {
+    --basic-dark-blue: #293449;
+    --basic-light-blue: #F3F7F9;
+    --basic-white: #FFFFFF;
+    --basic-red: #EE3643;
+    --basic-asphalt: #32425C;
+    --basic-green: #63A63E;
+    --basic-grey: #C5C5C5;
+    --basic-black: #000000;
+    --basic-light-grey: #B7BFC8;
+    --basic-orange: #FFBF47;
+    --basic-blue: #3BBCE3;
+    --basic-pink: #DC91D8;
+    --basic-light-green: #8ED78F;
+    --basic-light-orange: #FFC047;
+    --basic-gold: #FFD180;
+    --basic-popular-product: #F9F5F0;
+    --basic-background-blue: #F1F5F7;
+    --basic-background-form: #F7F3EC;
+    --basic-background-light-blue: #F2F6F8;
+}
+
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cuprum, "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--basic-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: var(--basic-background-light-blue);
+
+}
+.header-menu {
+    color: var(--basic-white);
+    background-color: var(--basic-dark-blue);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header-menu-buy {
+    background-color: var(--basic-green);
+}
+
+header h1 {
+    color: var(--basic-red);
+    font-style: italic;
+    font-size: 16px;
+    width: 197px;
+    height: 71px;
+}
+
+.number {
+    color: var(--basic-red);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+address {
+    color: var(--basic-asphalt);
+    font-style: normal;
+    font-size: 14px;
+    width: 250px;
+    height: 24px;
+}
+
+.personal-area {
+    list-style-type: none;
+    font-size: 21px;
+    color: var(--basic-black);
+}
+.personal-area a {
+    width: 121px;
+    height: 45px;
+    font-size: 21px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    
+}
+
+.main-menu {
+    background-color: var(--basic-asphalt);
+    font-size: 18px;
+    list-style-type: none;
+    width: 940px;
+    height: 60px;
+}
+
+.main-menu li {
+    display: inline;
+}
+
+/* Далее пропускаем большой кусок контента и по заданию делаем нижнюю часть страницы */ 
+
+.info-company {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+}
+
+.info-company h2 {
+    text-transform: uppercase;
+}
+
+.info-company a {
+    background-color: var(--basic-red);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.about-company ul {
+    list-style-type: none;
+}
+
+.about-company li::before {
+    content: "-";
+    width: 25px;
+    height: 2px;
+    color: var(--basic-red);
+}
+
+.about-company p {
+    font-family: "PT Sans";
+    font-size: 13px;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--basic-asphalt);
+}
+
+.footer-company-info img {
+    width: 220px;
+    height: 68px;
+    margin-left: 130px;
+    margin-right: 850px;
+}
+
+.footer-company-info address {
+    color: var(--basic-light-blue);
+    margin-left: 133px;
+    margin-right: 746px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.footer-company-info a {
+    color: var(--basic-light-blue);
+    margin-left: 133px;
+    margin-right: 746px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer-menu {
+    color: var(--basic-background-blue);
+    font-size: 18px; 
+}
+
+.footer-menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+.footer-menu-catalog a {
+    color: var(--basic-gold);
+}
+
+.footer-menu-catalog span {
+    color: #FFDA96;
+}
+
+.footer-last-menu {
+    background-color: var(--basic-dark-blue);
+}
+
+.footer-last-menu p {
+     color: var(--basic-white);
+     font-size: 16px;
+}
+
+.footer-last-menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+.footer-last-menu p a {
+    color: var(--basic-gold);
+}
+
+/* Модальное окно */
+
+.pop-up {
+    display: none;
+}
+
+/* Здесь идут стили к внутренней странице */
+
+.personal-area span {
+    color: var(--basic-asphalt);
+    font-size: 16px;
+    background-color: var(--basic-background-light-blue);
+}
+
+.menu-pages {
+    font-family: "PT Sans";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    list-style-type: none;
+
+}
+
+.menu-pages a {
+    font-family: "PT Sans";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.menu-pages li {
+    display: inline;
+}
+
+h1 span {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--baisc-color-asphalt);
+    background-color: var(--basic-background-light-blue);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.filter-select {
+    background-color: var(--basic=white);
+    font-family: "PT Sans";
+    font-size: 15px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+.filter-select h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.filter-select button {
+    font-size: 13px;
+    background-color: var(--basic-white);
+    width: 220px;
+    height: 38px;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: #E5E5E5;
+}
+
+.product-wrapper {
+   border-style: solid;
+   border-color: #EAEAEA;
+   width: 220px;
+   height: 318px;
+   list-style-type: none;
+}
+
+.product-wrapper img {
+    padding-left: 33px;
+    padding-right: 43px;
+}
+
+.product-wrapper p {
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.product-wrapper div {
+    color: #A9A9A9;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+.product-wrapper a {
+    background-color: var(--basic-red);
+    text-decoration: none;
+}
