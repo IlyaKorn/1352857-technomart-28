@@ -7,8 +7,7 @@
   <body>
    <header> 
     <a href="index.html"><img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт" ></a>
-    <form action="https://echo.htmlacademy.ru" method="post">
-     <img src="img/icon-search.svg" alt="Иконка поиска">
+    <form action="https://echo.htmlacademy.ru" method="GET">
      <label for="search">
       Поиск<input id="search" type="search"> <!--пока непонятно, как корректно задать эту форму и почему она не отображается-->
      </label>
@@ -52,71 +51,59 @@
        <li><a>Перфораторы</a></li>
      </ul>
      <h1>Перфораторы</h1>
-     <p>Сортировка:</p>
-     <form>
-      <fieldset>
-       <legend>Форма сортировки товара</legend>
-       <label for="По-цене">
-        По цене<input id="По-цене" type="radio" name="sorting-radio" value="#">
-       </label>
-       <label for="По-типу">
-       По типу<input id="По-типу" type="radio" name="sorting-radio" value="#">
-       </label>
-       <label for="По-функционалу">
-       По функционалу<input id="По-функционалу" type="radio" name="sorting-radio" value="#">
-       </label>
-      </fieldset>
-      <nav>
-       <ul>
-        <li><a href="index.html">Главная</a></li>  <!--здесь будет значок для перехода на главную страницу-->
-        <li><a>Каталог</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Перфораторы</a></li>
-       </ul>
-      </nav>
+      <p>Сортировка:</p>
+      <ul>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По функционалу</a></li>
+      </ul>
       <p>Фильтр</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
       <fieldset>
        <legend>Цена:</legend>
-       <label for="price-range">
-         <input id="price-range" type="range" min="0" max="30000" step="250" value="28000">
-       </label><br>
-       <input id="price-number" type="number" min="0" max="30000" step="250" value="0">
-       - <input type="number" min="0" max="30000" step="250" value="30000">
+        <button type="button"></button>
+        <button type="button"></button><br>
+        <input type="text" name="price-number" value="0">
+        - <input type="text" name="price-number-two" value="30000">
       </fieldset>
-     <h3>Производители:</h3>
-     <fieldset>
-      <legend>Форма фильтра по производителям</legend>
-      <label for="checkbox-bosch">
-       Bosch<input id="checkbox-bosch" type="checkbox" checked>
-      </label>
-      <label for="checkbox-interskol">
-       Интерскол<input id="checkbox-interskol" type="checkbox">
-      </label>
-      <label for="checkbox-makita">
-       Makita<input id="checkbox-makita" type="checkbox" checked>
-      </label>
-      <label>
-       Dewalt<input id="checkbox-dewalt" type="checkbox">
-      </label>
-      <label>
-       Hitachi<input id="checkbox-hitachi" type="checkbox">
-      </label>
-     </fieldset>
-      <h3>Питание:</h3>
       <fieldset>
-       <legend>Форма фильтра товара по типу питания</legend>
-       <label for="Аккамуляторные">
-        Аккамуляторные<input id="Аккамуляторные" type="radio" name="radio-pitane" value="Аккамуляторные">
-       </label>
-       <label for="Сетевые">
-        Сетевые<input id="Сетевые" type="radio" name="radio-pitane" value="Сетевые"><br>
-       </label>
+        <legend>Производители:</legend>
+        <label for="checkbox-bosch">
+          Bosch
+          <input id="checkbox-bosch"  type="checkbox" name="checkbox-bosch" checked>
+        </label>
+        <label for="checkbox-interskol">
+          Интерскол
+          <input id="checkbox-interskol" type="checkbox" name="checkbox-interskol">
+        </label>
+        <label for="checkbox-makita">
+          Makita
+          <input id="checkbox-makita" type="checkbox" name="checkbox-makita" checked>
+        </label>
+        <label>
+          Dewalt
+          <input id="checkbox-dewalt" type="checkbox" name="checkbox-dewalt">
+        </label>
+        <label>
+        Hitachi
+        <input id="checkbox-hitachi" type="checkbox" name="checkbox-hitachi">
+        </label>
       </fieldset>
-      <button>Показать</button>
+      <fieldset>
+        <legend>Питание:</legend>
+        <label for="rechargeable">
+          Аккумуляторные
+          <input id="rechargeable" type="radio" name="radio-pitane" value="rechargeable">
+        </label>
+        <label for="network">
+          Сетевые<input id="network" type="radio" name="radio-pitane" value="network"><br>
+        </label>
+      </fieldset>
+      <button type="submit">Показать</button>
      </form>
       <ul>
        <li>
-        <img src="img/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
+        <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
         <h4>
           Перфоратор BOSCH<br>
           BFG 6000
@@ -125,7 +112,7 @@
         <p>25500 Р.</p>
        </li>
        <li>
-          <img src="img/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
+          <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
           <h4>
             Перфоратор BOSCH<br>
             BFG 6000<br>
@@ -134,7 +121,7 @@
           <p>25500 Р.</p>
        </li>
        <li>
-        <img src="img/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
+        <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
           <h4>
             Перфоратор BOSCH<br>
             BFG 6000<br>
@@ -143,7 +130,7 @@
           <p>25500 Р.</p>
        </li>
        <li>
-        <img src="img/bfg3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"><br>
+        <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"><br>
         <h4>
           Перфоратор BOSCH<br>
           BFG 3000<br>
@@ -152,7 +139,7 @@
         <p>15500 Р.</p>
        </li>
        <li>
-        <img src="img/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
+        <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
         <h4>
           Перфоратор BOSCH<br>
           BFG 6000<br>
@@ -161,7 +148,7 @@
         <p>25500 Р.</p>
        </li>
        <li>
-        <img src="img/bfg2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"><br>
+        <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"><br>
         <h4>
           Перфоратор BOSCH<br>
           BFG 2000
@@ -169,7 +156,7 @@
         <p>12500 Р.</p>
        </li>
        <li>
-        <img src="img/bfg3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"><br>
+        <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"><br>
         <h4>
           Перфоратор BOSCH<br>
           BFG 3000<br>
@@ -178,7 +165,7 @@
         <p>15500 Р.</p>
        </li>
        <li>
-        <img src="img/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
+        <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"><br>
         <h4>
           Перфоратор BOSCH<br>
           BFG 6000<br>
@@ -187,7 +174,7 @@
         <p>25500 Р.</p>
        </li>
        <li>
-        <img src="img/bfg2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"><br>
+        <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"><br>
         <h4>
           Перфоратор BOSCH<br>
           BFG 2000<br>
@@ -202,7 +189,6 @@
         <a href="#">Следующая</a><br> <!--br со временем нужно будет удалить-->
       </div>
      <section>
-      <!--здесь будет форма перехода по страницам-->
       <h2>Пара слов о перфораторах</h2>
       <p>
        Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,бетоне и камне.<br>
@@ -214,10 +200,8 @@
     <footer>
      <div>
       <a href="index.html"><img src="img/logo.svg" width="220" height="68" alt="Логотип Техномарт"></a>
-      <p>
-       <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address><br>
-       <a href="tel:+78125550555">+7 (812) 555-05-55</a><br>
-      </p>
+      <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address><br>
+      <a href="tel:+78125550555">+7 (812) 555-05-55</a><br>
      </div>
      <ul>
       <li><a href="#">Компания</a></li>
