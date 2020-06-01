@@ -1,0 +1,410 @@
+/* Variables */
+
+:root {
+    --basic-white: #FFFFFF;
+    --basic-black: #000000;
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-blue: #32425C;
+    --basic-gray: #C5C5C5;
+    --basic-darkblue: #293449;
+    --basic-darkgray: #B7BFC8;
+    --basic-lightwhite: #F3F7F9;
+    --basic-whiteblue: #3BBCE3;
+    --basic-lightgreen: #8ED78F;
+    --basic-pink: #DC91D8;
+    --basic-orange: #FFBF47;
+    --basic-carrot-orange: #FFC047;
+    --basic-lightgray: #EAEAEA;
+    --basic-color-gray: #A9A9A9;
+    --basic-beige: #F9F5F0;
+    --basic-whitegray: #F9F5F0;
+    --basic-gold: #FFD180;
+    --basic-lightblack: #212A3A;
+    --basic-item-gold: #FFDA96;
+    --basic-whitebeige: #F4F4F4;
+    --basic-againgray: #C1C6CE;
+    --basic-specialgray: #E5E5E5;
+    --basic-elephant: #ABABAB;
+    --basic-cream: #F7F3EC;
+    --basic-specialblack: #444444;
+    --basic-mouse: #D7DCDE;
+    --basic-milk: #F2F6F8;
+    --basic-backgroundblue: #F1F5F7;
+    --basic-background-light-blue: #F3F7F8;
+    --basic-background-green: #5FBB2D;
+    --basic-background-red: #BA2732;
+    --basic-background-black: #161D29;
+    --basic-background-hover-blue: #3D546F;
+    --basic-background-active-blue: #1D2739;
+    --basic-background-dark-green: #518534;
+}
+
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header {
+    background-color: var(--basic-background-light-blue);
+}
+
+.top-menu {
+    color: var(--basic-white);
+    background-color: var(--basic-darkblue);
+}
+
+.top-menu a {
+    color: var(--basic-white);
+}
+
+.top-menu span {
+    background-color: var(--basic-green);
+}
+
+.main-header h1 {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--basic-red);
+    font-weight: normal;
+}
+
+.company-info a {
+    font-size: 21px;
+    color: var(--basic-red);
+    font-weight: bold;
+    border: 3px solid #FFFFFF;
+}
+
+.company-info address {
+    color: var(--basic-blue);
+    font-size: 14px;
+    font-style: normal;
+}
+
+.login {
+    font-size: 21px;
+    background-color: var(--basic-white);
+}
+
+.menu-navigation {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+    margin-left: 130px;
+    margin-right: 130px;
+    list-style-type: none;
+}
+
+.menu-navigation a {
+    color: var(--basic-white); /* Нужно уточнить у Наставника, почему по предыдущему свойству не передалось */
+}
+
+.bottom-info-company {
+    background-color: var(--basic-backgroundblue);
+}
+
+.bottom-info-company h2 {
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.bottom-info-company p {
+    font-family: "PT Sans";
+    font-weight: normal;
+}
+
+.link-red {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+/* footer */
+
+.main-footer {
+    background-color: var(--basic-blue)
+}
+
+.main-footer address {
+    color:  var(--basic-lightwhite);
+    font-style: normal;
+} 
+
+.main-footer div address + a {
+    color:  var(--basic-lightwhite);
+    font-style: normal;
+}
+
+.main-footer li {
+    list-style-type: none;
+}
+
+.bottom-white-menu a   {
+    color: var(--basic-backgroundblue);
+}
+
+.bottom-gold-menu a {
+    color: var(--basic-gold);
+}
+
+.bottom-gold-menu span {
+    color: var(--basic-item-gold);
+}
+
+.main-footer aside {
+    color: var(--basic-white);
+    font-size: 16px;
+    background-color: var(--basic-darkblue);
+}
+
+.icon-social    {
+    width: 26px;
+    height: 15px;
+}
+
+.main-footer aside span {
+    color: var(--basic-gold);
+}
+
+.pop-up-basket {
+    display: none;
+}
+
+.big-map {
+    display: none;
+}
+
+.pop-up-feedback {
+    display: none;
+}
+
+/* catalog */
+
+.top-menu-basket {
+    background-color: var(--basic-red); /* скорее всего это делается по-другому, нужно будет потом проверить обязательно */
+}
+
+.login-user {
+    background-color: var(--basic-white);
+}
+
+.login-user a:nth-child(1) {
+    font-size: 21px;
+}
+
+.info-user {
+    color: var(--basic-blue);
+    font-size: 16px;
+}
+
+.history-pages {
+    font-family: "PT Sans";
+    font-size: 13px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.main-heading {
+    font-size: 30px;
+    color: var(--basic-blue);
+    text-transform: uppercase;
+    background-color: var(--basic-milk);
+}
+
+.filter {
+    font-family: "PT Sans";
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.filter legend {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.filter button {
+    font-size: 13px;
+    background-color: var(--basic-white);
+    border: 1px solid #E5E5E5;
+    text-transform: uppercase;
+    width: 220px;
+}
+
+.catalog-cards {
+    list-style-type: none;
+    font-family: "PT Sans";
+}
+.card {
+    width: 220px;
+    border: 1px solid #EAEAEA;
+}
+
+.card h3 {
+    font-weight: bold;
+}
+
+.first-price {
+    font-size: 17px;
+    color: var(--basic-color-gray);
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+.card p {
+    font-size: 17px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.change-page {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.change-page a:first-child {
+    width: 135px;
+    background-color: var(--basic-green);
+    color: var(--basic-white);
+}
+
+.change-page a:last-child {
+    width: 135px;
+    border: 1px solid #63A63E;
+    color: #32425C;
+
+}
+
+/* interactive elements */
+
+.top-menu span:hover {
+    background-color: var(--basic-background-green);
+}
+
+.top-menu span:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.top-menu image:active {
+    box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.top-menu .logo-top:active {
+    background-color: var(--basic-background-red);
+}
+
+.active-top-menu:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: var(--basic-background-black);
+}
+
+.top-menu input:focus {
+    background-color: var(--basic-white);
+}
+
+.login:hover {
+    color: var(--basic-red);
+}
+
+.login:active {
+    color: var(--basic-gray);
+}
+
+.login-user span:hover {
+    color: var(--background-hover-blue);
+}
+
+.login-user a:active {
+    color: var(--basic-gray);
+}
+
+.info-user:hover {
+    color: var(--basic-red);
+}
+
+.info-useractive {
+    color: var(--basic-gray);
+}
+
+.menu-navigation span:hover {   
+    background-color: var(--basic-darkblue);
+}
+
+.menu-navigation span:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #1D2739;
+}
+
+.change-page-first:hover {
+    background-color: #5FBB2D;
+}
+
+.change-page-first:active {
+    background-color: #518534;
+}
+
+.change-page-second:hover {
+    color: #32425C;
+    border: 1px solid #32425C;
+}
+
+.change-page-second:active {
+    color: rgb(50, 66, 92, 0.5);
+    border: 1px solid rgb(50, 66, 92, 0.5);
+}
+
+.menu-bottom a:hover {
+    text-decoration: underline;
+}
+
+.bottom-white-menu a:active {
+    color: rgb(241, 245, 247, 0.5);
+}
+
+.bottom-gold-menu a:active {
+    color: rgb(255, 209, 128, 0.5);
+}
+
+.bottom-gold-menu span:active {
+    color: rgb(255, 209, 128, 0.5);
+}
+
+.social-networks:hover {
+    background-color: var(--basi-red);
+}
+
+.social-networks:active {
+    background-color: var(--basi-red);
+}
+
+.last-bottom-menu span:hover {
+    text-decoration: underline;
+}
+
+.last-bottom-menu span:active {
+    color: var(--basic-red);
+} 
+
+.filter input:hover {
+    color: #B5B5B5;
+}
+
+.filter-input:active {
+    color: rgb(0, 0, 0, 0.4);
+}
