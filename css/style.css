@@ -38,6 +38,13 @@
     --basic-background-hover-blue: #3D546F;
     --basic-background-active-blue: #1D2739;
     --basic-background-dark-green: #518534;
+    --basic-special-color-gray: rgba(255, 255, 255, 0.5);
+    --basic-special-color-black: rgba(0, 0, 0, 0.25);
+    --basic-special-color-blue: rgb(50, 66, 92, 0.5);
+    --basic-speacial-color-double-gray: rgb(241, 245, 247, 0.5);
+    --basic-special-color-beige: rgb(255, 209, 128, 0.5);
+    --basic-special-color-dark-black: rgb(0, 0, 0, 0.4);
+    --basic-special-color-white: #B5B5B5;
 }
 
 /* Global */
@@ -73,7 +80,7 @@ img {
     color: var(--basic-white);
 }
 
-.top-menu span {
+.buy-order {
     background-color: var(--basic-green);
 }
 
@@ -287,22 +294,22 @@ img {
 .change-page a:last-child {
     width: 135px;
     border: 1px solid #63A63E;
-    color: #32425C;
+    color: var(--basic-blue);
 
 }
 
 /* interactive elements */
 
-.top-menu span:hover {
+.buy-oder:hover {
     background-color: var(--basic-background-green);
 }
 
-.top-menu span:active {
-    color: rgba(255, 255, 255, 0.5);
+.buy-order:active {
+    color: var(--basic-special-color-gray);
 }
 
 .top-menu image:active {
-    box-shadow: rgba(0, 0, 0, 0.25);
+    box-shadow: var(--basic-special-color-black);
 }
 
 .top-menu .logo-top:active {
@@ -310,7 +317,7 @@ img {
 }
 
 .active-top-menu:active {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--basic-special-color-gray);
     background-color: var(--basic-background-black);
 }
 
@@ -342,31 +349,31 @@ img {
     color: var(--basic-gray);
 }
 
-.menu-navigation span:hover {   
+.menu-navigation-company:hover {   
     background-color: var(--basic-darkblue);
 }
 
-.menu-navigation span:active {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #1D2739;
+.menu-navigation-company:active {
+    color: var(--basic-special-color-gray);
+    background-color: var(--basic-background-active-blue);
 }
 
 .change-page-first:hover {
-    background-color: #5FBB2D;
+    background-color: var(---basic-background-green);
 }
 
 .change-page-first:active {
-    background-color: #518534;
+    background-color: var(--basic-background-dark-green);
 }
 
 .change-page-second:hover {
-    color: #32425C;
+    color: var(----basic-blue)
     border: 1px solid #32425C;
 }
 
 .change-page-second:active {
-    color: rgb(50, 66, 92, 0.5);
-    border: 1px solid rgb(50, 66, 92, 0.5);
+    color: var(--basic-special-color-blue);
+    border: var(--basic-special-color-blue);
 }
 
 .menu-bottom a:hover {
@@ -374,23 +381,23 @@ img {
 }
 
 .bottom-white-menu a:active {
-    color: rgb(241, 245, 247, 0.5);
+    color: var(--baisc-special-color-double-gray);
 }
 
 .bottom-gold-menu a:active {
-    color: rgb(255, 209, 128, 0.5);
+    color: var(--basic-special-color-beige);
 }
 
 .bottom-gold-menu span:active {
-    color: rgb(255, 209, 128, 0.5);
+    color: var(--basic-special-color-beige);
 }
 
 .social-networks:hover {
-    background-color: var(--basi-red);
+    background-color: var(--basic-red);
 }
 
 .social-networks:active {
-    background-color: var(--basi-red);
+    background-color: var(--basic-red);
 }
 
 .last-bottom-menu span:hover {
@@ -402,9 +409,9 @@ img {
 } 
 
 .filter input:hover {
-    color: #B5B5B5;
+    color: var(--basic-special-color-white);
 }
 
 .filter-input:active {
-    color: rgb(0, 0, 0, 0.4);
+    color: var(--basic-special-color-dark-black);
 }
