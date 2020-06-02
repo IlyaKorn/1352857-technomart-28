@@ -50,11 +50,11 @@
 /* Global */
 
 body {
-    font-family: "PT Sans", "Cuprum", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: normal;
-    height: 1952px;
     background-color: var(--basic-white);
+    line-height: 24px;
 }
 
 a {
@@ -69,6 +69,7 @@ img {
 .main-header {
     font-family: "Cuprum", "Arial", sans-serif;
     background-color: var(--basic-background-light-blue);
+    font-size: 18px;
 }
 
 .top-menu {
@@ -138,6 +139,7 @@ img {
 }
 
 .link-red {
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     color: var(--basic-white);
@@ -152,7 +154,9 @@ img {
 /* footer */
 
 .main-footer {
-    background-color: var(--basic-blue)
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    background-color: var(--basic-blue);
 }
 
 .main-footer address {
@@ -181,7 +185,7 @@ img {
     color: var(--basic-item-gold);
 }
 
-.main-footer div {
+.last-bottom-menu {
     color: var(--basic-white);
     font-size: 16px;
     background-color: var(--basic-darkblue);
@@ -309,7 +313,7 @@ img {
     font-size: 16px;
 }
 
-.last-bottom-menu p a {
+.last-bottom-menu-mail {
     color: var(--basic-gold);
 }
 
