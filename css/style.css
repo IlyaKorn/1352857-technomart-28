@@ -45,6 +45,11 @@
     --basic-special-color-beige: rgb(255, 209, 128, 0.5);
     --basic-special-color-dark-black: rgb(0, 0, 0, 0.4);
     --basic-special-color-white: #B5B5B5;
+    --basic-special-rgb-white: rgb(255, 255, 255, 0.15);
+    --basic-opacity-white: rgb(255, 255, 255, 0.3);
+    --basic-opacity-gray: rgb(197, 197, 197, 0.3);
+    --basic-opacity-color-gray: rgb(169, 169, 169, 0.3);
+    --basic-opacity-black: rgb(0, 0, 0, 0.15);
 }
 
 /* Global */
@@ -65,6 +70,8 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* header */
 
 .main-header {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -122,8 +129,117 @@ img {
     color: var(--basic-white);
 }
 
-.bottom-info-company {
+/* Main page */
+
+.mini-menu {
+    font-family: "Cuprum", "Arial", sans-serif;
+    color: var(--basic-white);
+    font-weight: bold;
+    font-size: 24px;
+    width: 300px;
+}
+
+.mini-menu a {
+    color: var(--basic-white);
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: var(--basic-opacity-white);
+}
+.mini-menu-materials {
+    background-color: var(--basic-orange);
+}
+
+.mini-menu-tool {
+    background-color: var(--basic-whiteblue);
+}
+
+.mini-menu-equipment {
+    background-color: var(--basic-pink);
+}
+
+.mini-menu-discounts {
+    background-color: var(--basic-lightgreen);
+}
+
+.mini-menu-delivery {
+    background-color: var(--basic-carrot-orange);
+    font-weight: bold;
+}
+
+.open-catalog {
+    font-size: 14px;
+    width: 192px;
+    background-color: var(--basic-red);
+}
+
+.popular-heading {
+    font-family: "Cuprum", "Arial", sans-serif;
+    width: 940px;
+    text-transform: uppercase;
+    background-color: var(--basic-beige);
+}
+
+.popular-heading h2 {
+    color: var(--basic-blue);
+    font-size: 30px;
+}
+
+.popular-heading a {
+    width: 192px;
+    font-size: 14px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.popular-manufacturers {
+    list-style-type: none;
+}
+
+.services {
     background-color: var(--basic-backgroundblue);
+}
+
+.services h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.services button {
+    width: 240px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+}
+.services-bottom h2{
+    font-family: "Cuprum", "Arial", sans-serif;
+    color: var(--basic-blue);
+    font-size: 30px;
+}
+
+.services-bottom a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    width: 195px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    text-transform: uppercase;
+}
+
+.slides h2  {
+    font-size: 36px;
+    color: var(--basic-white);
+    font-weight: bold;
+}
+
+.slides p {
+    font-size: 18px;
+    color: var(--basic-white);
+}
+.bottom-info-company {
+    background-color: var(--basic-white);
 }
 
 .bottom-info-company h2 {
@@ -150,6 +266,8 @@ img {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size:18px;
 }
+
+/* End Main page*/
 
 /* footer */
 
@@ -235,10 +353,66 @@ img {
 }
 
 .main-heading {
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
+    font-weight: normal;
     color: var(--basic-blue);
     text-transform: uppercase;
     background-color: var(--basic-milk);
+}
+
+.main-heading p {
+    text-transform: uppercase;
+}
+
+.sorting {
+    width: 700px;
+    background-color: var(--basic-cream);
+}
+
+.sorting li {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.sorting li:nth-child(1) {
+    color: var(--basic-red);
+}
+
+.sorting li:nth-child(2) {
+    color: var(--basic-black);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--basic-red);
+}
+
+.sorting li:nth-child(3) {
+    color: var(--basic-black);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--basic-red);
+}
+
+.filter-alone {
+    background-color: var(--basic-cream);
+}
+
+.sorting p {
+    text-transform: uppercase;
+}
+
+.filter-alone {
+    text-transform: uppercase;
+}
+
+.filter-price input {
+    background-color: var(--basic-cream);
+}
+
+.filter-price legend {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .filter {
@@ -266,7 +440,7 @@ img {
 }
 .card {
     width: 220px;
-    border: 1px solid var(--basic-white);
+    border: 1px solid var(--basic-lightgray);
 }
 
 .card h3 {
@@ -303,6 +477,15 @@ img {
     color: var(--basic-blue);
 }
 
+.one-two-three {
+    text-transform: uppercase;
+}
+
+.one-two-three li {
+    list-style-type: none;
+    border: 1px solid var(--basic-specialgray);
+}
+
 .menu-bottom {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
@@ -316,6 +499,19 @@ img {
 .last-bottom-menu-mail {
     color: var(--basic-gold);
 }
+
+.about-drill {
+    background-color: var(--basic-backgroundblue);
+}
+
+
+.about-drill h2{
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
 
 /* interactive elements */
 
@@ -377,6 +573,39 @@ img {
     background-color: var(--basic-background-active-blue);
 }
 
+.mini-menu a:hover {
+    background-color: var(--basic-opacity-gray);
+}
+
+.mini-menu a:active {
+    background-color: var(--basic-opacity-color-gray);
+}
+
+.sorting li:hover   {
+    color: var(--basic-black);
+    text-decoration: underline;
+    text-decoration-color: var(--basic-red);
+}
+
+.sorting li:active {
+    color: var(--basic-red);
+    text-decoration: none;
+}
+
+.one-two-three li:hover {
+    border: 1px solid var(--basic-gray);
+}
+
+.one-two-three li:active {
+    color: var(--basic-black);
+    border: 1px solid var(--basic-red);
+}
+
+
+.open-catalog:active {
+    background-color: var(--basic-background-red);
+}
+
 .change-page-first:hover {
     background-color: var(--basic-background-green);
 }
@@ -393,6 +622,22 @@ img {
 .change-page-second:active {
     color: var(--basic-special-color-blue);
     border: 1px solid var(--basic-special-color-blue);
+}
+
+.popular-manufacturers img:hover {
+    box-shadow: 0px 4px 20px var(--basic-opacity-black);
+}
+.popular-manufacturers img:active {
+    opacity: 0.5;
+}
+
+.services button:hover {
+    background-color: var(--basic-darkblue);
+}
+
+.services button:active {
+    color: var(--basic-blue);
+    background-color: var(--basic-white); /* Нужно убрать рамку при нажатии */
 }
 
 .menu-bottom a:hover {
