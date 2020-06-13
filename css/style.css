@@ -91,6 +91,7 @@ img {
 
 .buy-order {
     background-color: var(--basic-green);
+    padding-right: 16px;
 }
 
 .main-header h1 {
@@ -115,15 +116,23 @@ img {
 
 .login {
     font-size: 21px;
+    list-style: none;
+}
+
+.login a:first-child {
     background-color: var(--basic-white);
 }
+
+.login a:last-child {
+    background-color: var(--basic-white);
+}
+
 
 .menu-navigation {
     color: var(--basic-white);
     background-color: var(--basic-blue);
-    margin-left: 130px;
-    margin-right: 130px;
     list-style-type: none;
+    margin-bottom: 60px;
 }
 
 .menu-navigation a {
@@ -334,6 +343,9 @@ img {
 
 .login-user {
     background-color: var(--basic-white);
+    margin-top: 46px;
+    width: 299px;
+
 }
 
 .login-user a:nth-child(1) {
@@ -343,6 +355,7 @@ img {
 .info-user {
     color: var(--basic-blue);
     font-size: 16px;
+    list-style-type: none;
 }
 
 .history-pages {
@@ -350,6 +363,7 @@ img {
     font-size: 13px;
     text-transform: uppercase;
     list-style-type: none;
+    padding-left: 0;
 }
 
 .main-heading {
@@ -359,6 +373,8 @@ img {
     color: var(--basic-blue);
     text-transform: uppercase;
     background-color: var(--basic-milk);
+    height: 89px;
+    margin-bottom: 20px;
 }
 
 .main-heading p {
@@ -406,6 +422,10 @@ img {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+.filter ul {
+    list-style: none;
 }
 
 .filter legend {
@@ -485,6 +505,7 @@ img {
 
 .last-bottom-menu-mail {
     color: var(--basic-gold);
+   
 }
 
 .about-drill {
@@ -547,7 +568,7 @@ img {
     color: var(--basic-red);
 }
 
-.info-useractive {
+.info-user:active {
     color: var(--basic-gray);
 }
 
@@ -637,6 +658,10 @@ img {
     color: var(--basic-special-color-double-gray);
 }
 
+.bottom-gold-menu a:hover {
+    text-decoration: underline;
+}
+
 .bottom-gold-menu a:active {
     color: var(--basic-special-color-beige);
 }
@@ -667,4 +692,239 @@ img {
 
 .filter-input:active {
     color: var(--basic-special-color-dark-black);
+}
+
+
+/* Flex and grid */
+
+.html-grid {
+    height: 100%;
+}
+
+.body-grid {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1ft min-content;
+    align-content: start;
+}
+
+.container {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.top-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+}
+
+.second-top-menu.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 158px;
+}
+
+.second-top-menu h1 {
+    margin-top: 42.5px;
+    margin-bottom: 44.5px;
+}
+
+.login li {
+    display: inline;
+
+}
+
+.login a:first-child {
+    margin-left: 69px;
+}
+
+.login a:last-child {
+    margin-left: 14px;
+}
+
+.menu-navigation {
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+}
+
+.menu-navigation li:nth-child(1) {
+    margin-left: 52px;
+    margin-right: 58px;
+}
+
+.menu-navigation li:nth-child(3) {
+    margin-left: 56px;
+    margin-right: 59px;
+}
+
+
+.menu-navigation li:nth-child(5) {
+    margin-left: 57px;
+    margin-right: 55px;
+}
+
+
+.menu-navigation li:nth-child(7) {
+    margin-left: 58px;
+    margin-right: 47px;
+}
+
+.bottom-info-company .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-info-company h2 {
+    margin-top: 70px;
+}
+
+.company-partners {
+    width: 478px;
+}
+
+.company-contacts {
+    width: 300px;
+}
+
+.company-partners,
+.company-contacts {
+    margin-bottom: 70px;
+}
+
+.bottom-white-menu li {
+    display: inline;
+}
+
+.bottom-gold-menu li {
+    display: inline;
+}
+
+.first-bottom-menu .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-white-menu li:nth-child(5) {
+    margin-left: 59px;
+}
+
+.bottom-white-menu li:nth-child(4) {
+    margin-left: 60px;
+}
+
+.bottom-white-menu li:nth-child(3) {
+    margin-left: 58px;
+}
+
+.bottom-white-menu li:nth-child(2) {
+    margin-left: 58px;
+}
+
+.bottom-white-menu {
+    margin-top: 37px;
+}
+
+.bottom-gold-menu {
+    margin-bottom: 74px;
+}
+
+.bottom-address {
+    margin-bottom: 54px;
+}
+
+.bottom-second-menu .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-gold-menu li:nth-child(4) {
+    margin-left: 59px;
+}
+
+.bottom-gold-menu li:nth-child(3) {
+    margin-left: 60px;
+}
+
+.bottom-gold-menu li:nth-child(2) {
+    margin-left: 58px;
+}
+
+.last-bottom-menu .container {
+    display: flex;
+    align-items: center;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.double-top-menu .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.double-top-menu h1 {
+    margin-top: 42.5px;
+    width: 200px;
+
+}
+
+.info-user li {
+    display: inline;
+}
+
+.company-info {
+    width: 270px;
+    margin-left: 93px;
+    margin-right: 51px;
+    margin-top: 46px;
+}
+
+.top-main-flex .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+
+}
+
+.history-pages {
+    order: -1;
+    margin-bottom: 52px;
+}
+
+.history-pages li {
+    display: inline;
+}
+
+.main-heading {
+    vertical-align: middle;
+}
+
+.bottom-mail-first {
+    width: 137px;
+}
+
+.bottom-mail-second {
+    width: 98px;
+}
+
+.grid-catalog {
+    display: flex;
+}
+
+.catalog-cards {
+    display: grid;
+    grid-row-gap: 18px;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+        "c1 c2 c3"
+        "c4 c5 c6"
+        "c7 c8 c9";
 }
