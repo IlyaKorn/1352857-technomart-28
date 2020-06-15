@@ -153,6 +153,11 @@ img {
     font-weight: bold;
     font-size: 24px;
     width: 300px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    grid-gap: 20px;
+    margin-top: 59px;
 }
 
 .mini-menu a {
@@ -176,11 +181,15 @@ img {
 
 .discounts {
     background-color: var(--basic-lightgreen);
+    grid-column: 3;
+    grid-row: 2;
 }
 
 .delivery {
     background-color: var(--basic-carrot-orange);
     font-weight: bold;
+    grid-column: 3;
+    grid-row: 3;
 }
 
 .open-catalog {
@@ -193,11 +202,17 @@ img {
     font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
     background-color: var(--basic-beige);
+    margin-top: 59px;
 }
 
 .popular-heading h2 {
     color: var(--basic-blue);
     font-size: 30px;
+    margin: 0;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    padding-left: 28px;
+    line-height: 30px;
 }
 
 .popular-heading a {
@@ -208,7 +223,14 @@ img {
 }
 
 .popular-manufacturers {
+    padding-left: 0;
     list-style-type: none;
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 145px 145px;
+    grid-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 .services {
@@ -219,6 +241,8 @@ img {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
+    padding-top: 64px;
+    margin: 0;
 }
 
 .services button {
@@ -228,6 +252,15 @@ img {
     color: var(--basic-white);
     background-color: var(--basic-blue);
 }
+
+.services-flex {
+    display: flex;
+}
+
+.services-bottom {
+    margin-left: 80px;
+}
+
 .services-bottom h2{
     font-family: "Cuprum", "Arial", sans-serif;
     color: var(--basic-blue);
@@ -242,6 +275,14 @@ img {
     background-color: var(--basic-red);
     text-transform: uppercase;
 }
+
+.slides {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
 
 .slides h2  {
     font-size: 36px;
@@ -394,8 +435,19 @@ img {
 }
 
 .sorting {
-    width: 700px;
     background-color: var(--basic-cream);
+    align-items: center;
+    line-height: 18px;
+    display: flex;
+}
+
+.sorting ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sorting li {
+    display: inline;
 }
 
 .sorting a {
@@ -407,17 +459,13 @@ img {
     text-decoration-color: var(--basic-red);
 }
 
-
 .filter-alone {
     background-color: var(--basic-cream);
 }
 
 .sorting p {
     text-transform: uppercase;
-}
-
-.filter-alone {
-    text-transform: uppercase;
+    margin: 0;
 }
 
 .filter-price input {
@@ -502,11 +550,14 @@ img {
 .one-two-three {
     padding-left: 0;
     text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
 }
 
 .one-two-three li {
     list-style-type: none;
     border: 1px solid var(--basic-specialgray);
+    display: inline;
 }
 
 .menu-bottom {
@@ -533,8 +584,16 @@ img {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
+    margin: 0;
+    line-height: 30px;
+    margin-top: 64px;
+    margin-bottom: 25px;
 }
 
+.about-drill p {
+    margin: 0;
+    padding-bottom: 68px;
+}
 
 
 /* interactive elements */
@@ -864,6 +923,7 @@ img {
 
 .last-bottom-menu .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -932,3 +992,19 @@ img {
     grid-column-gap: 20px;
     grid-template-columns: 220px 220px 220px;
 }
+
+.first-page {
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services button {
+    display: block;
+}
+
+.services button:first-of-type {
+    margin-top: 70px;
+}
+
