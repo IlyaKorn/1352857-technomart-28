@@ -203,6 +203,8 @@ img {
     text-transform: uppercase;
     background-color: var(--basic-beige);
     margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .popular-heading h2 {
@@ -216,6 +218,7 @@ img {
 }
 
 .popular-heading a {
+    display: block;
     width: 192px;
     font-size: 14px;
     color: var(--basic-white);
@@ -231,6 +234,12 @@ img {
     grid-gap: 20px;
     margin-top: 20px;
     margin-bottom: 70px;
+}
+
+.popular-manufacturers a {
+    display: inline-block;
+    width: 220px;
+    height: 145px;
 }
 
 .services {
@@ -468,6 +477,11 @@ img {
     margin: 0;
 }
 
+
+.filter-price button {
+    display: flex;
+}
+
 .filter-price input {
     background-color: var(--basic-cream);
 }
@@ -577,22 +591,24 @@ img {
 
 .about-drill {
     background-color: var(--basic-backgroundblue);
+    margin-top: 59px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
 
 .about-drill h2{
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
     margin: 0;
-    line-height: 30px;
     margin-top: 64px;
+    line-height: 30px;
     margin-bottom: 25px;
 }
 
 .about-drill p {
     margin: 0;
-    padding-bottom: 68px;
+    margin-bottom: 68px;
 }
 
 
@@ -982,10 +998,6 @@ img {
     width: 98px;
 }
 
-.catalog-grid {
-    display: flex;
-}
-
 .catalog-cards {
     display: grid;
     grid-row-gap: 18px;
@@ -1008,3 +1020,16 @@ img {
     margin-top: 70px;
 }
 
+.catalog-grid {
+    width: 220px;
+}
+
+.big-catalog-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two-main-flex {
+   display: flex;
+   flex-direction: column;
+}
