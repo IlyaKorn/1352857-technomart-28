@@ -11,46 +11,76 @@
    <header class="main-header"> 
      <div class="top-menu">
        <div class="container">
-        <a class="logo-top"><img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт"></a>
-        <form action="https://echo.htmlacademy.ru" method="GET">
-          <label for="search">
-            Поиск
-            <input id="search" type="search"> <!--пока непонятно, как корректно задать эту форму и почему она не отображается-->
-          </label>
-        </form>
-        <a class="active-top-menu top-bookmarks" href="#">Закладки: 0</a>
-        <a class="active-top-menu top-basket" href="#">Корзина: 0</a>
-        <a class="buy-order" href="#">Оформить заказ</a>
+        <a class="logo-top"><img src="img/logo.svg" alt="Логотип Техномарт"></a>
+        <div class="div-top-input">
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <label for="search">
+              <input id="search" type="search" name="search" placeholder="Поиск:">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+              </svg>
+            </label>
+          </form>
+        </div>
+        <div class="div-bookmark">
+          <a class="active-top-menu top-bookmarks" href="#">Закладки: 0
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
+            </svg>     
+          </a>       
+        </div>
+        <div class="div-basket">
+          <a class="active-top-menu top-basket" href="#">Корзина: 0
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+              <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+              <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+            </svg>
+          </a>
+        </div>
+        <div class="div-buy-order">
+          <a class="buy-order" href="#">Оформить заказ</a>
+        </div>
        </div>
      </div>
      <div class="double-top-menu">
       <div class="container">
-        <h1>
-          Интернет-магазин<br> 
-          строительных материалов<br> 
-          и инструментов для ремонта
-        </h1>
-        <div class="company-info">
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <address>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <div class="online-magazine">
+          <h1>
+            Интернет-магазин<br> 
+            строительных материалов<br> 
+            и инструментов для ремонта
+          </h1>
         </div>
-        <ul class="login">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Регистрация</a></li>
-        </ul>
+        <div class="company-info">
+          <a class="company-info-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        </div>
+        <div class="div-login">
+          <ul class="login">
+            <li>
+              <a class="entry-href" href="#">
+                Войти
+                <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
+                  <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
+                </svg>
+              </a>
+            </li>
+            <li><a class="registration-href" href="#">Регистрация</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="three-top container">
-      <ul class="menu-navigation">
-        <li><a>Главная</a></li>
-        <li><a class="menu-navigation-company" href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li> 
-        <li><a href="#">Новости</a></li> 
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li> 
-        <li><a href="#">Контакты</a></li>
-      </ul>
-   </div>
+    <ul class="menu-navigation container">
+      <li><a>Главная</a></li>
+      <li><a class="menu-navigation-company" href="#">Компания</a></li>
+      <li><a href="catalog.html">Каталог</a></li> 
+      <li><a href="#">Новости</a></li> 
+      <li><a href="#">Спецпредложения</a></li>
+      <li><a href="#">Доставка</a></li> 
+      <li><a href="#">Контакты</a></li>
+    </ul>
    </header>
    <main>
      <div class="container">
@@ -221,22 +251,40 @@
     <div class="bottom-info-company">
       <div class="container">
         <section class="company-partners">
-          <h2>«Компания Техномарт»</h2>
+          <h2>Компания «Техномарт»</h2>
           <p>
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
             ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
             гастарбайтерах.
           </p>
-          <p>
+          <p class="we-can-do">
             Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="partners">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li>
+              Деловые линии
+              <svg width="25" height="2" viewBox="0 0 25 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="one-hyphen">
+                <rect width="25" height="2" fill="#EE3643"/>
+              </svg> 
+            </li>
+            <li>
+              Автотрейдинг
+              <svg width="25" height="2" viewBox="0 0 25 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="two-hyphen">
+                <rect width="25" height="2" fill="#EE3643"/>
+              </svg> 
+            </li>
+            <li>
+              ЖелДорЭкспедиция
+              <svg width="25" height="2" viewBox="0 0 25 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="three-hyphen">
+                <rect width="25" height="2" fill="#EE3643"/>
+              </svg> 
+            </li>
           </ul>
-          <a class="link-red" href="#">Подробнее о компании</a>  <!--ссылка на раздел о Компании-->
+          <div class="first-link">
+            <a class="link-red" href="#">Подробнее о компании</a>
+          </div>
+          </section>
         </section>
         <section class="company-contacts">
           <h2>Контакты</h2>
@@ -244,8 +292,14 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <a class="bottom-map" href="#"><img src="img/map.png" alt="Наш магазин на карте"></a>
-          <a class="link-red" href="#">Заблудились? Напишите нам!</a> <!--ссылка с обратной связью-->
+          <div class="big-map" class="visually-hidden">
+            <img src="img/bigmap.png" alt="Наш магазин на карте">
+            <button type="button"></button>
+          </div>
+          <a class="bottom-map" href="img/bigmap.png"><img src="img/map.png" alt="Наш магазин на карте"></a>
+          <div class="second-link">
+            <a class="link-red" href="#">Заблудились? Напишите нам!</a>
+          </div>
         </section>
       </div>
     </div>
@@ -302,34 +356,46 @@
     </div>
  </footer>
    <!--Это поп-ап при добавлении товара в корзину-->
-   <div class="pop-up-basket">
+   <div class="pop-up-basket visually-hidden">
     <p>Товар добавлен в корзину!</p>
     <a href="#">Оформить заказ</a>
     <a href="#">Продолжить покупки</a>
     <button type="button">Закрыть окно</button>
    </div>
-   <!--Это модальное окно при нажатии на мелкую карту-->
-   <div class="big-map">
-     <img src="img/bigmap.png" alt="Наш магазин на карте">
-     <button type="button">Закрыть окно</button>
-   </div>
    <!--форма отправки обратной связи-->
-   <div class="pop-up-feedback">
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <label for="name-feedback">
-          Ваше имя:
-          <input id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия">
-        </label>
-        <label for="email-feedback">
-          Ваш e-mail:
-          <input id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com">
-        </label>
-        <label for="text-feedback">
-          Текст письма:
-          <textarea id="text-feedback" name="text-feedback" placeholder="В свободной форме"></textarea>
-        </label>
-      </form>
-      <button type="submit" name="button-feedback">Отправить</button>
-    </div>
+   <div class="container pop-up-feedback visually-hidden">
+     <div class="div-feedback">
+       <div class="flex-feedback">
+          <div class="div-name-feedback">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <label for="name-feedback">
+                <span>Ваше имя:</span>
+                <input id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия">
+              </label>
+            </form>
+          </div>
+          <div class="div-email-feedback">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <label for="email-feedback">
+                <span>Ваш e-mail:</span>
+                <input id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com">
+              </label>
+            </form>
+          </div>
+          <div class="div-text-feedback">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <label for="text-feedback">
+                <span>Текст письма:</span>
+                <textarea id="text-feedback" name="text-feedback" placeholder="В свободной форме"></textarea>
+              </label>
+            </form>
+          </div>
+       </div>
+        <div class="div-feedback-button">
+          <button type="submit" name="button-feedback">Отправить</button>
+        </div>
+       <button class="close-button" type="button"></button>
+     </div>
+   </div>
   </body>
  </html>
