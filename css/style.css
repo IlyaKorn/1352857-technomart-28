@@ -103,7 +103,16 @@ img {
     opacity: 0.3;
 }
 
-.main-header svg:hover {
+.top-menu input:hover + svg {
+    opacity: 1;
+}
+
+.top-menu input:focus + svg path {
+    fill: var(--basic-red);
+    opacity: 1;
+}
+
+.top-menu a:hover svg {
     opacity: 1;
 }
 
@@ -275,6 +284,7 @@ img {
     position: absolute;
     left: 18px;
     top: 14px;
+    opacity: 1;
 }
 
 .registration-href {
@@ -757,19 +767,15 @@ img {
     position: relative;
 }
 
+.login-user svg {
+    opacity: 1;
+}
+
 .info-user-div {
     margin-top: 7px;
     position: relative;
     width: 100%;
     line-height: 18px;
-}
-
-.info-user-div div {
-    margin-left: 44px;
-    margin-right: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .name-user {
@@ -802,6 +808,29 @@ img {
     color: var(--basic-blue);
     font-size: 16px;
     list-style-type: none;
+}
+
+.info-user-div a:first-of-type {
+    margin-left: 44px;
+    margin-right: 29px;
+}
+
+
+.info-user-div svg {
+    position: absolute;
+    top: 7px;
+    left: 133px;
+    opacity: 1;
+}
+
+.info-user-div:hover svg path {
+    fill: var(--basic-red);
+    opacity: 1;
+}
+
+.info-user-div:active svg path {
+    fill: var(--basic-gray);
+    opacity: 1;
 }
 
 .history-pages {
@@ -927,53 +956,34 @@ img {
     display: block;
     position: relative;
     cursor: pointer;
+    width: 90px;
 }
 
-.filter-checkbox + label::before {
-    content: "";
-    position: absolute;
-    background-image: url(../img/checkbox-off.svg);
-    left: -35px;
-    top: -25px;
-    width: 23px;
-    height: 23px;
+.type-nutrition {
+    position: relative;
 }
 
-.filter-checkbox:checked + label::after {
-    content: "";
-    position: absolute;
-    background-image: url(../img/checkbox-on.svg);
-    left: -31px;
-    top: -25px;
-    width: 22px;
-    height: 17px;
-}
-
-.input-radio + label::before {  /*Не понимаю почему окружность обрезалась */
-    content: "";
-    background-image: url(../img/radio-off.svg);
-    width: 25px;
-    height: 25px;
+.type-nutrition svg {
     position: absolute;
     left: -35px;
-    top: -25px;
+    top: 0;
 }
 
-.input-radio:checked + label::after {
-    content: "";
-    background-image: url(../img/radio-on.svg);
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: -35px;
-    top: -25px;
-} 
+.radio-on {
+    display: none;
+}
 
+.input-radio:checked + .radio-on {
+    display: block;
+}
+
+.input-radio:checked ~ .radio-off {
+    display: none;
+}
 
 .filter ul {
     list-style: none;
     padding-left: 35px;
-
 }
 
 .filter legend {
@@ -987,6 +997,35 @@ img {
     border: 1px solid var(--basic-specialgray);
     text-transform: uppercase;
     width: 220px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.filter-checkbox-image-on  {
+    position: absolute;
+    left: -35px;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.filter-checkbox-image-off {
+    position: absolute;
+    left: -35px;
+    top: 0;
+    cursor: pointer;
+}
+
+.filter-checkbox:checked + .filter-checkbox-image-on {
+    display: block;
+}
+
+.filter-checkbox:checked ~ .filter-checkbox-image-off {
+    display: none;
+}
+
+.filter-label:hover .filter-svg path {
+    fill: var(--basic-special-color-white);
 }
 
 .catalog-cards {
@@ -1021,6 +1060,14 @@ img {
     width: 218px;
     border: 1px solid var(--basic-lightgray);
     position: relative;
+}
+
+.card:hover .change-page {
+    display: block;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 20px var(--basic-shadow-black);
 }
 
 .div-card-image {
@@ -1066,8 +1113,14 @@ img {
 .change-page {
     font-size: 14px;
     text-transform: uppercase;
-    margin-left: 41px;
-    margin-right: 44px;;
+    background-color: var(--basic-white);
+    width: 218px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+
 }
 
 .change-page-first {
@@ -1085,6 +1138,8 @@ img {
     padding-bottom: 10px;
     border-radius: 2px;
     position: relative;
+    margin-left: 41px;
+    margin-top: 38px;
 }
 
 
@@ -1101,6 +1156,7 @@ img {
     display: block;
     text-align: center;
     margin-top: 10px;
+    margin-left: 41px;
 }
 
 .one-two-three {
@@ -1162,6 +1218,7 @@ img {
 
 .buy-order:active {
     color: var(--basic-special-color-gray);
+    box-shadow: 0px 4px 4px 0, 0, 0, var(--basic-special-color-black);
 }
 
 .active-top-menu:active {
@@ -1173,20 +1230,36 @@ img {
     background-color: var(--basic-white);
 }
 
-.login:hover {
+.login a:hover {
     color: var(--basic-red);
 }
 
-.login:active {
+.login a:hover svg path {
+    fill: var(--basic-background-hover-blue);
+    opacity: 1;
+}
+
+.login a:active {
     color: var(--basic-gray);
 }
 
-.login-user span:hover {
-    color: var(--background-hover-blue);
+
+.login a:active svg path {
+    fill:var(--basic-gray);
 }
 
 .login-user a:active {
     color: var(--basic-gray);
+}
+
+.login-user:hover svg path {
+    fill: var(--basic-background-hover-blue);
+    opacity: 1;
+}
+
+.login-user:active svg path {
+    fill: var(--basic-gray);
+    opacity: 1;
 }
 
 .info-user:hover {
@@ -1224,8 +1297,6 @@ img {
     color: var(--basic-red);
     text-decoration: none;
 }
-
-
 
 .one-two-three li:hover {
     border: 1px solid var(--basic-gray);
@@ -1310,15 +1381,6 @@ img {
 .last-bottom-menu span:active {
     color: var(--basic-red);
 } 
-
-.filter input:hover {
-    color: var(--basic-special-color-white);
-}
-
-.filter-input:active {
-    color: var(--basic-special-color-dark-black);
-}
-
 
 /* Flex and grid */
 
@@ -1533,10 +1595,6 @@ img {
 
 }
 
-.info-user li {
-    display: inline;
-}
-
 .company-info {
     height: 158px;
     width: 270px;
@@ -1626,6 +1684,7 @@ img {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    display: none;
 }
 
 .pop-up-basket-head {
