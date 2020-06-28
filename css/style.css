@@ -151,8 +151,7 @@ img {
 }
 
 .div-bookmark {
-    min-width: 156px;
-    height: 100%;
+    width: 150px;
     position: relative;
 }
 
@@ -170,8 +169,7 @@ img {
 }
 
 .div-basket {
-    min-width: 124px;
-    height: 100%;
+    width: 150px;
     position: relative;
 }
 
@@ -192,8 +190,8 @@ img {
 
 .div-buy-order {
     background-color: var(--basic-green);
-    min-width: 150px;
-    height: 100%;
+    width: 150px;
+    min-height: 42px;
 }
 
 .div-buy-order:hover {
@@ -204,8 +202,7 @@ img {
     display: block;
     padding-top: 9px;
     padding-left: 19px;
-    height: 100%;
-    width: 100%;
+    padding-bottom: 9px;
 }
 
 .main-header h1 {
@@ -338,13 +335,63 @@ img {
     margin-top: 59px;
 }
 
+.mini-menu span {
+    display: block;
+    padding-left: 23px;
+    padding-top: 20px;
+}
+
 .mini-menu a {
+    font-family: "Cuprum", "Arial", sans-serif;
     color: var(--basic-white);
     font-size: 14px;
     font-weight: normal;
     text-transform: uppercase;
     background-color: var(--basic-opacity-white);
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10px;
+    width: 135px;
+    height: 38px;
+    margin-left: 23px;
+    margin-top: 14px;
+    line-height: 18px;
 }
+
+.mini-menu-item {
+    position: relative;
+}
+
+.mini-menu-svg {
+    position: absolute;
+}
+
+.svg-materials {
+    top: 31px;
+    right: 43px;
+}
+
+.svg-tool {
+    top: 34px;
+    right: 31px;
+}
+
+.svg-equipment {
+    top: 31px;
+    right: 31px;
+}
+
+.svg-discounts {
+    top: 26px;
+    right: 45px;
+}
+
+.svg-delivery {
+    top: 32px;
+    right: 31px;
+}
+
 .materials {
     background-color: var(--basic-orange);
 }
@@ -383,15 +430,15 @@ img {
     margin-top: 59px;
     display: flex;
     justify-content: space-between;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    padding-left: 28px;
 }
 
 .popular-heading h2 {
     color: var(--basic-blue);
     font-size: 30px;
     margin: 0;
-    padding-top: 29px;
-    padding-bottom: 30px;
-    padding-left: 28px;
     line-height: 30px;
 }
 
@@ -463,24 +510,79 @@ img {
     text-transform: uppercase;
 }
 
-.slides {
+.div-slides {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
+    position: relative;
+    background-image: url(../img/first-drill.png);
 }
 
+.slides {
+    margin: 0;
+    padding-left: 0;
+    height: 100%;
+}
 
 .slides h2  {
     font-size: 36px;
     color: var(--basic-white);
-    font-weight: bold;
+    font-weight: bold; 
+    margin-left: 24px;
+    margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 .slides p {
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     color: var(--basic-white);
+    margin: 0;
+    margin-left: 24px;
+    margin-top: 5px;
+    font-weight: normal;
 }
+
+.slider-item a {
+    display: block;
+    width: 192px;
+    height: 38px;
+    padding-left: 46px;
+    padding-right: 46px;
+    margin: 0;
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.left-button {
+    position: absolute;
+    left: 24px;
+    top: 122px;
+}
+
+.right-button {
+    position: absolute;
+    right: 20px;
+    top: 122px;
+    transform: rotate(-180deg);
+}
+
+.div-slides button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(../img/icon-left.svg);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 40px;
+}
+
+.neighbors {
+    display: none;
+}
+
 .bottom-info-company {
     background-color: var(--basic-white);
     min-height: 496px; 
@@ -823,12 +925,12 @@ img {
     opacity: 1;
 }
 
-.info-user-div:hover svg path {
+.info-user-div:hover path {
     fill: var(--basic-red);
     opacity: 1;
 }
 
-.info-user-div:active svg path {
+.info-user-div:active path {
     fill: var(--basic-gray);
     opacity: 1;
 }
@@ -1024,7 +1126,7 @@ img {
     display: none;
 }
 
-.filter-label:hover .filter-svg path {
+.filter-label:hover path {
     fill: var(--basic-special-color-white);
 }
 
@@ -1234,7 +1336,7 @@ img {
     color: var(--basic-red);
 }
 
-.login a:hover svg path {
+.login a:hover path {
     fill: var(--basic-background-hover-blue);
     opacity: 1;
 }
@@ -1244,7 +1346,7 @@ img {
 }
 
 
-.login a:active svg path {
+.login a:active path {
     fill:var(--basic-gray);
 }
 
@@ -1252,12 +1354,12 @@ img {
     color: var(--basic-gray);
 }
 
-.login-user:hover svg path {
+.login-user:hover path {
     fill: var(--basic-background-hover-blue);
     opacity: 1;
 }
 
-.login-user:active svg path {
+.login-user:active path {
     fill: var(--basic-gray);
     opacity: 1;
 }
@@ -1581,7 +1683,6 @@ img {
 }
 
 .online-magazine {
-    height: 100%;
     min-width: 227px;
     margin-top: 42px;
     margin-bottom: 44px;
