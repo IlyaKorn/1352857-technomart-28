@@ -124,17 +124,26 @@
         </div>
         <div class="big-catalog-flex">
           <div class="catalog-grid">
-            <p><span class="filter-alone">Фильтр</span></p>
+            <p><span class="filter-alone">Фильтр:</span></p>
             <form action="https://echo.htmlacademy.ru" method="POST">
               <fieldset class="filter-price">
                 <legend>Цена:</legend>
-                  <button type="button"></button>
-                  <button type="button"></button>
-                  <input type="text" name="price-number" value="0">
-                  - <input type="text" name="price-number-two" value="30000">
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                      <div class="toggle toggle-min" tabindex="0"></div>
+                      <div class="toggle toggle-max"tabindex="0"></div>
+                    </div>
+                  </div>
+                  <div class="price-controls">
+                    <input type="text" name="price-number" value="0">
+                    — <input type="text" name="price-number" value="30000">
+                  </div>
+                </div>
               </fieldset>
               <div class="filter">
-                <fieldset>
+                <fieldset class="filter-manufacturers">
                   <legend>Производители:</legend>
                   <ul>
                     <li>
@@ -244,12 +253,20 @@
               <div class="sorting">
                 <p>Сортировка:</p>
                 <ul>
-                  <li><a href="#">По цене</a></li>
+                  <li><a href="#"><span>По цене</span></a></li>
                   <li><a href="#">По типу</a></li>
                   <li><a href="#">По функционалу</a></li>
                 </ul>
-                <a href="#"><span>Сортировка вверх</span></a>
-                <a href="#"><span>Сортировка вниз</span></a>
+                <a href="#" class="arrow-up" aria-label="Сортировка вверх">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-svg">
+                    <path d="M5.66235 0L11.1624 10L0.162354 10" fill="#EE3643"/>
+                  </svg>
+                </a>
+                <a href="#" class="arrow-down" aria-label="Сортировка вниз">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-svg">
+                    <path d="M5.66235 0L11.1624 10L0.162354 10" fill="#C5C5C5"/>
+                  </svg>
+                </a>
               </div>
               <ul class="catalog-cards">
                 <li class="card">
@@ -306,7 +323,7 @@
                       <a href="#" class="change-page-second">В закладки</a>  
                     </div>  
                 </li>
-                <li class="card">
+                <li class="card new-product">
                   <div class="div-card-image">
                     <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                   </div>
@@ -342,7 +359,7 @@
                     <a href="#" class="change-page-second">В закладки</a>
                   </div>
                 </li>
-                <li class="card">
+                <li class="card new-product">
                   <div class="div-card-image">
                     <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                   </div>
@@ -360,7 +377,7 @@
                     <a href="#" class="change-page-second">В закладки</a>  
                   </div>
                 </li>
-                <li class="card">
+                <li class="card new-product">
                   <div class="div-card-image">
                     <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                   </div>
@@ -396,7 +413,7 @@
                     <a href="#" class="change-page-second">В закладки</a>  
                   </div>
                 </li>
-                <li class="card">
+                <li class="card new-product">
                   <div class="div-card-image">
                     <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                   </div>
@@ -418,9 +435,9 @@
             </div>
             <div class="one-two-three">
               <ul>
-                <li><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
+                <li class="pages-bottom"><a>1</a></li>
+                <li class="pages-bottom"><a href="#">2</a></li>
+                <li class="pages-bottom"><a href="#">3</a></li>
                 <li><a href="#">Следующая</a></li>
               </ul>
             </div>

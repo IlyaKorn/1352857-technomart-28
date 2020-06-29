@@ -127,22 +127,30 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.062 0H64C64 0 78 14.812 78 33.688V48.938C78 48.938 77.812 53 74.875 53.001H73.166C71.992 46.74 66.507 42.001 59.906 42.001C53.306 42.001 47.82 46.74 46.646 53.001H39.242C38.068 46.74 32.583 42.001 25.983 42.001C19.383 42.001 13.897 46.74 12.724 53.001H10.625C10.625 53.001 8.061 52.377 8.061 49.189V33.574L22.812 32.814C22.812 32.814 28.295 32.211 29.102 29.058L5.446 27.804C3.58204 27.804 2.071 26.293 2.071 24.429C2.071 22.565 3.58204 21.054 5.446 21.054H14.502L22.812 20.626C22.812 20.626 30.989 20.018 31.75 16.821L31.554 16.778L3.469 14.938C1.55312 14.938 0 13.3849 0 11.469C0 9.55312 1.55312 8 3.469 8H8.062V3.125C8.062 3.125 7.874 0 11.062 0ZM52 8.938V23.938H67.812L62.062 8.938H52Z" fill="white"/>
           </svg>
         </div>
-        <div class="div-slides">
+        <div class="div-slides div-slide-1">
           <ul class="slides">
             <li class="slider-item toys">
               <h2>Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
               <a class="open-catalog" href="catalog.html">Открыть каталог</a>
             </li>
-            <li class="slider-item neighbors">
+            <li class="slider-item">
               <h2>Дрели</h2>
               <p>Соседям на радость!</p>
               <a class="open-catalog" href="catalog.html">Открыть каталог</a>
             </li>
           </ul>
-          <div>
+          <div class="switches">
             <button type="button" class="left-button" aria-label="Предыдущий слайд"></button>
             <button type="button" class="right-button" aria-label="Следующий слайд"></button>
+          </div>
+          <div class="slides-button">
+            <button type="button" class="slides-button-first" aria-label="Первый слайд">
+              <span></span>
+            </button>
+            <button type="button" aria-label="Второй слайд">
+              <span></span>
+            </button>
           </div>
         </div>
       </section>
@@ -164,12 +172,11 @@
           <div class="div-last-price">
             <p>25500 Р.</p>
           </div>
-          <!--это окно будет отображаться при наведении на товар-->
           <div class="change-page">
             <a href="#" class="change-page-first">Купить</a>  
             <a href="#" class="change-page-second">В закладки</a>  
           </div>
-          <li class="card">
+          <li class="card new-product">
             <div class="div-card-image">
               <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </div>
@@ -181,7 +188,6 @@
             <div class="div-last-price">
               <p>15500 Р.</p>
             </div>
-            <!--это окно будет отображаться при наведении на товар-->
             <div class="change-page">
               <a href="#" class="change-page-first">Купить</a>  
               <a href="#" class="change-page-second">В закладки</a>  
@@ -199,7 +205,6 @@
             <div class="div-last-price">
               <p>25500 Р.</p>
             </div>
-            <!--это окно будет отображаться при наведении на товар-->
             <div class="change-page">
               <a href="#" class="change-page-first">Купить</a>  
               <a href="#" class="change-page-second">В закладки</a>  
@@ -217,7 +222,6 @@
             <div class="div-last-price">
               <p>12500 Р.</p>
             </div>
-            <!--это окно будет отображаться при наведении на товар-->
             <div class="change-page">
               <a href="#" class="change-page-first ">Купить</a>  
               <a href="#" class="change-page-second">В закладки</a>  
@@ -244,46 +248,48 @@
     </div>
       <section class="services">
         <div class="container">
-          <h2>Сервисы</h2>
-          <p>
-            Хороший интернет-магазин отличается от плохого не только ценами!<br>
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-          </p>
-          <div class="services-flex">
-            <div>
-              <button type="button">Доставка</button>
-              <button type="button">Гарантия</button>
-              <button type="button">Кредит</button>
-            </div>
-            <div class="services-bottom">
-              <div>
-                <h2>Доставка</h2>
-                <p>
-                  Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно!<br>
-                  Ведь мы неплохо заработаем,<br>
-                  поднимая его на ваш этаж!
-                </p>
+          <div class="services-1">
+            <h2>Сервисы</h2>
+            <p>
+              Хороший интернет-магазин отличается от плохого не только ценами!<br>
+              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+            </p>
+            <div class="services-flex">
+              <div class="services-buttons">
+                <button type="button" class="button-view"><span>Доставка</span></button>
+                <button type="button" ><span>Гарантия</span></button>
+                <button type="button"><span>Кредит</span></button>
               </div>
-              <div>
-                <h2>Гарантия</h2>
-                <p>
-                  Если купленный у нас товар поломается или заискрит,<br>
-                  а также в случае пожара,спровоцированного его<br>
-                  возгоранием, вы всегда можете быть уверены в нашей<br>
-                  гарантии.Мы обменяем сгоревший товар на новый.<br>
-                  Дом уж восстановите как-нибудь сами.
-                </p>
-              </div>
-              <div>
-                <h2>Кредит</h2>
-                <p>
-                  Залезть в долговую яму стало проще!<br>
-                  Кредитные консультанты придут вам на помощь.
-                </p>
-                <a href="#">Отправить заявку</a>
-              </div>
-            </div>
+              <ul class="services-bottom">
+                <li class="services-three services-view">
+                  <h2>Доставка</h2>
+                  <p>
+                    Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br>
+                    поднимая его на ваш этаж!
+                  </p>
+                </li>
+                <li class="services-three">
+                  <h2>Гарантия</h2>
+                  <p>
+                    Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара,спровоцированного его<br>
+                    возгоранием, вы всегда можете быть уверены в нашей<br>
+                    гарантии.Мы обменяем сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
+                </li>
+                <li class="services-three">
+                  <h2>Кредит</h2>
+                  <p>
+                    Залезть в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.
+                  </p>
+                  <a href="#">Отправить заявку</a>
+                </li>
+              </ul>
+             </div>
           </div>
         </div>
       </section>
