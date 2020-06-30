@@ -448,6 +448,7 @@ img {
     font-size: 14px;
     color: var(--basic-white);
     background-color: var(--basic-red);
+    margin-right: 14px;
 }
 
 .popular-manufacturers {
@@ -551,19 +552,15 @@ img {
     line-height: 30px;
     background-color: var(--basic-blue);
     cursor: pointer;
-    margin: 0;
     border: none;
-    box-shadow: 0px 1px 0px var(--basic-darkblue), inset 0px 1px 0px var(--basic-border);
-    width: 240px;
+    box-shadow: 0px 1px 0px var(--basic-darkblue);
     height: 61px;
+    padding-left: 22px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-right: 157px;
     position: relative;
-
-}
-
-.services-buttons span {
-    position: absolute;
-    left: 22px;
-    top: 13px;
+    max-width: 240px;
 }
 
 .services-buttons::after {
@@ -706,22 +703,17 @@ img {
 .slides-button button {
     width: 10px;
     height: 10px;
+    box-sizing: border-box;
     padding: 0;
+    color: var(--basic-white);
     border-radius: 50%;
-    border: none;
+    border: 2px solid var(--basic-white);
     cursor: pointer;
 }
 
-.slides-button span {
-    width: 6px;
-    height: 6px;
-    padding: 0;
-    border-radius: 50%;
-    margin-left: 2px;
-}
-
-.slides-button-first span {
-    background-color: var(--basic-red);
+.slides-button .slides-button-first {
+    color: var(--basic-red);
+    background-color: red;
 }
 
 .slider-item {
@@ -914,9 +906,8 @@ img {
     background-color: var(--basic-darkblue);
 }
 
-.icon-social    {
-    width: 26px;
-    height: 15px;
+.icon-social {
+    display: block;
 }
 
 .div-feedback {
@@ -979,6 +970,10 @@ img {
     outline: none;
 } 
 
+.pop-up-feedback {
+    display: none;
+}
+
 .pop-up-feedback span {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
@@ -1024,6 +1019,10 @@ img {
 .login-user {
     min-width: 299px;
     position: relative;
+}
+
+.login-user a {
+    color: var(--basic-black);
 }
 
 .login-user svg {
@@ -1538,23 +1537,32 @@ img {
 
 .change-page-first {
     font-family: "Cuprum", "Arial", sans-serif;
+    width: 135px;
+    box-sizing: border-box;
     font-size: 14px;
     line-height: 18px;
-    width: 135px;
-    height: 18px;
     background-color: var(--basic-green);
     color: var(--basic-white);
     display: block;
     box-shadow: inset 0px -3px 0px var(--basic-shadow-green);
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 41px 10px 54px;
     border-radius: 2px;
     position: relative;
     margin-left: 41px;
+    margin-right: 44px;
     margin-top: 38px;
 }
 
+.change-page-first::before {
+    content: "";
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+}
 
 .change-page-second {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -1592,9 +1600,20 @@ img {
     margin-right: 10px;
 }
 
-.one-two-three li:first-of-type {
+.one-two-three a {
+    color: var(--basic-black);
+}
+
+.one-two-three li  {
     color: var(--basic-white);
+}
+
+.pages-view {
     background-color: var(--basic-red);
+}
+
+.pages-view a   {
+    color: var(--basic-white);
 }
 
 .one-two-three li:last-of-type {
@@ -1799,14 +1818,6 @@ img {
     color: var(--basic-special-color-beige);
 }
 
-.social-networks:hover {
-    background-color: var(--basic-red);
-}
-
-.social-networks:active {
-    background-color: var(--basic-red);
-}
-
 .last-bottom-menu span:hover {
     text-decoration: underline;
 }
@@ -1997,12 +2008,33 @@ img {
 
 .social-networks {
     padding-left: 0;
+    display: flex;
+    align-items: center;
 }
 
 .social-networks li {
-    display: inline;
+    width: 44px;
+    height: 44px;
+    background-color: var(--basic-lightblack);
+    border-radius: 50%;
+    margin-left: 1px;
 }
 
+.social-networks li:hover {
+    background-color: var(--basic-red);
+}
+
+.vk {
+    margin: 14px 9px 15px 9px;
+}
+
+.fb {
+    margin: 11px 16px;
+}
+
+.inst {
+    margin: 11px 12px;
+}
 
 .double-top-menu .container {
     display: flex;
