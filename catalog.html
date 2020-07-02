@@ -198,7 +198,7 @@
                         Dewalt
                       </label>
                     </li>
-                    <li>
+                    <li class="hitachi-li">
                       <label for="checkbox-hitachi" class="filter-label">
                         <input id="checkbox-hitachi"  type="checkbox" name="checkbox-hitachi" class="filter-checkbox visually-hidden">
                         <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-checkbox-image-on filter-svg">
@@ -213,7 +213,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="fieldset-nutrition">
                   <legend>Питание:</legend>
                     <ul class="type-nutrition">
                       <li>
@@ -447,67 +447,68 @@
       </section>
    </main>
    <footer class="main-footer">
-      <div class="first-bottom-menu">
-        <div class="container">
-            <a href="index.html"><img src="img/logo.svg" width="220" height="68" alt="Логотип Техномарт"></a>
-            <div class="menu-bottom">
-                <ul class="bottom-white-menu">
-                  <li><a href="#">Компания</a></li>
-                  <li><a href="#">Новости</a></li>
-                  <li><a href="catalog.html">Каталог</a></li>
-                  <li><a href="#">Доставка</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
+    <div class="first-bottom-menu">
+     <div class="container">
+       <a href="#" class="bottom-logo"><img src="img/logo-bottom.svg" width="220" height="68" alt="Логотип Техномарт"></a>
+       <div class="menu-bottom">
+         <ul class="bottom-white-menu">
+           <li><a href="#">Компания</a></li>
+           <li><a href="#">Новости</a></li>
+           <li><a href="catalog.html">Каталог</a></li>
+           <li><a href="#">Доставка</a></li>
+           <li><a href="#">Контакты</a></li>
+         </ul>
+       </div>
+     </div>
+    </div>
+    <div class="bottom-second-menu">
+      <div class="container">
+        <div class="bottom-address">
+           <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+           <a class="telephone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+         </div>
+         <ul class="bottom-gold-menu">
+           <li><a href="#">Материалы</a></li>
+           <li class="bottom-gold-menu-alone"><a href="#">Техника</a></li>
+           <li><a href="#">Инструмент</a></li>
+           <li><a href="#">Спецпредложения</a></li>
+         </ul>
       </div>
-      <div class="bottom-second-menu">
-        <div class="container">
-          <div class="bottom-address">
-             <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-             <a class="telephone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
-           </div>
-           <ul class="bottom-gold-menu">
-             <li><a href="#">Материалы</a></li>
-             <li class="bottom-gold-menu-alone"><a href="#">Техника</a></li>
-             <li><a href="#">Инструмент</a></li>
-             <li><a href="#">Спецпредложения</a></li>
-           </ul>
-        </div>
-      </div>
+    </div>
     <div class="last-bottom-menu">
       <div class="container">
-         <p>
-           © 2010-2019 Компания «Техномарт»<br>
-           Все права защищены
-         </p>
-         <ul class="social-networks">
+        <p>
+          © 2010-2019 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
+        <ul class="social-networks">
           <li><a href="#"><img class="icon-social vk" src="img/vkontakte.svg" width="26" height="15" alt="Наша группа Вконтакте"></a></li>
           <li><a href="#"><img class="icon-social fb" src="img/facebook.svg" width="12" height="22" alt="Наша группа Фейсбук"></a></li>
           <li><a href="#"><img class="icon-social inst" src="img/instagram.svg" width="21" height="21" alt="Наша группа Инстраграм"></a></li>
         </ul>
-         <p class="bottom-mail-first">
-           Обратная связь:
-           <a class="last-bottom-menu-mail" href="mailto:mail@htmlacademy.ru"><span>mail@htmlacademy.ru</span></a>
-         </p>
-         <p class="bottom-mail-second">
-           Разработано -
-           <a class="last-bottom-menu-mail" href="https://htmlacademy.ru/intensive/htmlcss"><span>htmlacademy.ru</span></a>
-         </p>
-       </div>
+        <div class="last-bottom-menu-info">
+          <p class="bottom-mail-first">
+            Обратная связь:
+            <a class="last-bottom-menu-mail" href="mailto:mail@htmlacademy.ru"><span>mail@htmlacademy.ru</span></a>
+          </p>
+          <p class="bottom-mail-second">
+            Разработано -
+            <a class="last-bottom-menu-mail" href="https://htmlacademy.ru/intensive/htmlcss"><span>htmlacademy.ru</span></a>
+          </p>
+        </div>
      </div>
-     <!--Это поп-ап при добавлении товара в корзину-->
-     <div class="pop-up-basket container visually-hidden">
-        <div class="pop-up-basket-head">
-          <p>Товар добавлен в корзину!</p>
-          <button type="button"></button>
-        </div>
-        <div class="pop-up-basket-buttons">
-          <a href="#">Оформить заказ</a>
-          <a href="#">Продолжить покупки</a>
-        </div>
+    </div>
+    </footer>
+    <div class="pop-up-basket">
+      <div class="pop-up-basket-head">
+        <p>Товар добавлен в корзину!</p>
+        <button type="button"></button>
       </div>
-  </footer>
+      <div class="pop-up-basket-buttons">
+        <a href="#">Оформить заказ</a>
+        <a href="#">Продолжить покупки</a>
+      </div>
+    </div>
   </body>
 </html>
 

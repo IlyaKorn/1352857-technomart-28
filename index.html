@@ -11,7 +11,7 @@
    <header class="main-header"> 
      <div class="top-menu">
        <div class="container">
-        <a class="logo-top"><img src="img/logo.svg" alt="Логотип Техномарт"></a>
+        <a class="logo-top"><img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт"></a>
         <div class="div-top-input">
           <form action="https://echo.htmlacademy.ru" method="GET">
             <label for="search">
@@ -42,6 +42,7 @@
           <a class="buy-order" href="#">Оформить заказ</a>
         </div>
        </div>
+
      </div>
      <div class="double-top-menu">
       <div class="container">
@@ -150,28 +151,29 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="main-mini-catalog">
         <div class="popular-heading">
           <h2>Популярные товары:</h2>
           <a href="#">Все популярные товары</a>
         </div>
-      <ul class="catalog-cards first-page">
-        <li class="card">
-          <div class="div-card-image">
-            <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-          </div>
-          <h3>
-            Перфоратор BOSCH<br>
-            BFG 9000
-          </h3>
-          <span class="first-price">32500 Р.</span>
-          <div class="div-last-price">
-            <p>25500 Р.</p>
-          </div>
-          <div class="change-page">
-            <a href="#" class="change-page-first">Купить</a>  
-            <a href="#" class="change-page-second">В закладки</a>  
-          </div>
+        <ul class="catalog-cards first-page">
+          <li class="card">
+            <div class="div-card-image">
+              <img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+            </div>
+            <h3>
+              Перфоратор BOSCH<br>
+              BFG 9000
+            </h3>
+            <span class="first-price">32500 Р.</span>
+            <div class="div-last-price">
+              <p>25500 Р.</p>
+            </div>
+            <div class="change-page">
+              <a href="#" class="change-page-first">Купить</a>  
+              <a href="#" class="change-page-second">В закладки</a>  
+            </div>
+          </li>
           <li class="card new-product">
             <div class="div-card-image">
               <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
@@ -206,7 +208,7 @@
               <a href="#" class="change-page-second">В закладки</a>  
             </div>
           </li>
-          <li class="card">
+          <li class="card new-product">
             <div class="div-card-image">
               <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </div>
@@ -223,10 +225,10 @@
               <a href="#" class="change-page-second">В закладки</a>  
             </div>
           </li>
-      </ul>
+        </ul>
       </section>
       <section>
-        <div class="popular-heading">
+        <div class="popular-heading all-heading">
           <h2>Популярные производители:</h2>
           <a href="#">Все производители</a>
         </div>
@@ -332,10 +334,6 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <div class="big-map">
-            <img src="img/bigmap.png" alt="Наш магазин на карте">
-            <button type="button"></button>
-          </div>
           <a class="bottom-map" href="img/bigmap.png"><img src="img/map.png" alt="Наш магазин на карте"></a>
           <div class="second-link">
             <a class="link-red" href="#">Заблудились? Напишите нам!</a>
@@ -347,7 +345,7 @@
    <footer class="main-footer">
      <div class="first-bottom-menu">
       <div class="container">
-        <a href="index.html"><img src="img/logo.svg" width="220" height="68" alt="Логотип Техномарт"></a>
+        <a href="#" class="bottom-logo"><img src="img/logo-bottom.svg" width="220" height="68" alt="Логотип Техномарт"></a>
         <div class="menu-bottom">
           <ul class="bottom-white-menu">
             <li><a href="#">Компания</a></li>
@@ -384,62 +382,70 @@
           <li><a href="#"><img class="icon-social fb" src="img/facebook.svg" width="12" height="22" alt="Наша группа Фейсбук"></a></li>
           <li><a href="#"><img class="icon-social inst" src="img/instagram.svg" width="21" height="21" alt="Наша группа Инстраграм"></a></li>
         </ul>
-        <p class="bottom-mail-first">
-          Обратная связь:
-          <a class="last-bottom-menu-mail" href="mailto:mail@htmlacademy.ru"><span>mail@htmlacademy.ru</span></a>
-        </p>
-        <p class="bottom-mail-second">
-          Разработано -
-          <a class="last-bottom-menu-mail" href="https://htmlacademy.ru/intensive/htmlcss"><span>htmlacademy.ru</span></a>
-        </p>
+        <div class="last-bottom-menu-info">
+          <p class="bottom-mail-first">
+            Обратная связь:
+            <a class="last-bottom-menu-mail" href="mailto:mail@htmlacademy.ru"><span>mail@htmlacademy.ru</span></a>
+          </p>
+          <p class="bottom-mail-second">
+            Разработано -
+            <a class="last-bottom-menu-mail" href="https://htmlacademy.ru/intensive/htmlcss"><span>htmlacademy.ru</span></a>
+          </p>
+        </div>
       </div>
     </div>
  </footer>
-   <!--Это поп-ап при добавлении товара в корзину-->
-   <div class="pop-up-basket container">
+
+ <div class="pop-up-basket">
     <div class="pop-up-basket-head">
-       <p>Товар добавлен в корзину!</p>
-       <button type="button"></button>
+      <p>Товар добавлен в корзину!</p>
+      <button type="button"></button>
     </div>
     <div class="pop-up-basket-buttons">
       <a href="#">Оформить заказ</a>
       <a href="#">Продолжить покупки</a>
     </div>
-  </div>
-   <!--форма отправки обратной связи-->
-   <div class="container pop-up-feedback">
-     <div class="div-feedback">
-       <div class="flex-feedback">
-          <div class="div-name-feedback">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-              <label for="name-feedback">
-                <span>Ваше имя:</span>
-                <input id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия">
-              </label>
-            </form>
-          </div>
-          <div class="div-email-feedback">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-              <label for="email-feedback">
-                <span>Ваш e-mail:</span>
-                <input id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com">
-              </label>
-            </form>
-          </div>
-          <div class="div-text-feedback">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-              <label for="text-feedback">
-                <span>Текст письма:</span>
-                <textarea id="text-feedback" name="text-feedback" placeholder="В свободной форме"></textarea>
-              </label>
-            </form>
-          </div>
-       </div>
-        <div class="div-feedback-button">
-          <button type="submit" name="button-feedback">Отправить</button>
+ </div>
+
+  <!--форма отправки обратной связи-->
+ <div class="pop-up-feedback">
+    <div class="div-feedback">
+      <div class="flex-feedback">
+        <div class="div-name-feedback">
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="name-feedback">
+              <span>Ваше имя:</span>
+              <input id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия">
+            </label>
+          </form>
         </div>
-       <button class="close-button" type="button"></button>
-     </div>
-   </div>
-  </body>
- </html>
+        <div class="div-email-feedback">
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="email-feedback">
+              <span>Ваш e-mail:</span>
+              <input id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com">
+            </label>
+          </form>
+        </div>
+        <div class="div-text-feedback">
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="text-feedback">
+              <span>Текст письма:</span>
+              <textarea id="text-feedback" name="text-feedback" placeholder="В свободной форме"></textarea>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="div-feedback-button">
+        <button type="submit" name="button-feedback">Отправить</button>
+      </div>
+      <button class="close-button" type="button"></button>
+    </div>
+ </div>
+ <!--Форма карты-->
+ <div class="big-map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1593686748935!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <button type="button"></button>
+ </div>
+</body>
+</html>
