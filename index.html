@@ -259,7 +259,7 @@
                 <button type="button">Кредит</button>
               </div>
               <ul class="services-bottom">
-                <li class="services-slide services-slide-delivery  services-slide-view">
+                <li class="services-slide services-slide-delivery">
                   <h2>Доставка</h2>
                   <p>
                     Мы с удовольствием доставим ваш товар прямо<br>
@@ -278,7 +278,7 @@
                     Дом уж восстановите как-нибудь сами.
                   </p>
                 </li>
-                <li class="services-slide services-slide-credit">
+                <li class="services-slide services-slide-credit services-slide-view">
                   <h2>Кредит</h2>
                   <p>
                     Залезть в долговую яму стало проще!<br>
@@ -336,7 +336,7 @@
           </p>
           <a class="bottom-map" href="https://goo.gl/maps/LYUe3NA5gNEfzFR26"><img src="img/map.png" alt="Наш магазин на карте"></a>
           <div class="second-link">
-            <a class="link-red" href="#">Заблудились? Напишите нам!</a>
+            <a class="link-red login-link-red" href="#">Заблудились? Напишите нам!</a>
           </div>
         </section>
       </div>
@@ -410,32 +410,32 @@
   <!--форма отправки обратной связи-->
  <div class="pop-up-feedback">
     <div class="div-feedback">
-      <div class="flex-feedback">
-        <div class="div-name-feedback">
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <label for="name-feedback">
-              <span>Ваше имя:</span>
-              <input id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия">
-            </label>
-          </form>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div class="flex-feedback">
+          <div class="div-name-feedback">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <label for="name-feedback">
+                <span>Ваше имя:</span>
+                <input id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия" class="input-name" required>
+              </label>
+            </form>
+          </div>
+          <div class="div-email-feedback">
+              <label for="email-feedback">
+                <span>Ваш e-mail:</span>
+                <input id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com" class="input-email" required>
+              </label>
+            </form>
+          </div>
+          <div class="div-text-feedback">
+              <label for="text-feedback">
+                <span>Текст письма:</span>
+                <textarea id="text-feedback" name="text-feedback" placeholder="В свободной форме"></textarea>
+              </label>
+            </form>
+          </div>
         </div>
-        <div class="div-email-feedback">
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <label for="email-feedback">
-              <span>Ваш e-mail:</span>
-              <input id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com">
-            </label>
-          </form>
-        </div>
-        <div class="div-text-feedback">
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <label for="text-feedback">
-              <span>Текст письма:</span>
-              <textarea id="text-feedback" name="text-feedback" placeholder="В свободной форме"></textarea>
-            </label>
-          </form>
-        </div>
-      </div>
+      </form>
       <div class="div-feedback-button">
         <button type="submit" name="button-feedback">Отправить</button>
       </div>
@@ -447,5 +447,6 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1593686748935!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <button type="button"></button>
  </div>
+ <script src="js/login.js"></script>
 </body>
 </html>
