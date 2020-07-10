@@ -1579,6 +1579,13 @@ img {
     display: none;
 }
 
+.input-radio:disabled ~ .filter-svg {
+    opacity: 0.3;
+}
+.input-radio:disabled ~ span {
+    opacity: 0.3;
+}
+
 .filter ul {
     list-style: none;
     padding-left: 35px;
@@ -1632,13 +1639,12 @@ img {
     fill: var(--basic-special-color-white);
 }
 
-.filter .filter-label:disabled {
+.filter-checkbox:disabled ~ .filter-svg {
     opacity: 0.3
 }
 
-filter input:disabled {
-    fill: var(--basic-special-color-white);
-    opacity: 0.3
+.filter-checkbox:disabled ~ span {
+    opacity: 0.3;
 }
 
 .catalog-cards {
@@ -2249,6 +2255,7 @@ filter input:disabled {
 .social-networks {
     padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
     margin-left: 161px;
