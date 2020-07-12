@@ -97,7 +97,7 @@ img {
     box-sizing: border-box;
 }
 
-.logo-top:active {
+.logo-top[href]:active {
     background-color: var(--basic-logo);
     box-shadow: inset 0px -5px 0px var(--basic-logo-shadow);
 }
@@ -129,7 +129,6 @@ img {
 .top-menu {
     color: var(--basic-white);
     background-color: var(--basic-darkblue);
-
 }
 
 .top-menu a {
@@ -258,7 +257,6 @@ img {
     display: flex;
     line-height: 21px;
     position: relative;
-
 }
 
 .login li:first-of-type {
@@ -567,7 +565,6 @@ img {
     display: block;
 }
 
-
 .services-buttons {
     margin-top: 3px;
     position: relative;
@@ -837,7 +834,6 @@ img {
     background-color: var(--basic-beige);
 }
 
-
 .first-link {
     width: 220px;
     height: 38px;
@@ -956,10 +952,6 @@ img {
     outline: none;
 }
 
-
-
-
-
 /* End Main page*/
 
 /* footer */
@@ -1047,7 +1039,6 @@ img {
     font-size: 14px;
     color: var(--basic-white);
 }
-
 
 .close-button {
     position: absolute;
@@ -1147,6 +1138,11 @@ img {
     position: relative;
 }
 
+.top-menu-basket:active {
+    color: var(--basic-special-color-gray);
+    box-shadow: 0px 4px 4px 0, 0, 0, var(--basic-special-color-black);
+}
+
 .login-entry {
     height: 158px;
     margin-left: 51px;
@@ -1191,12 +1187,10 @@ img {
     top: 14px;
 }
 
-
 .login-user a:nth-child(1) {
     display: block;
     font-size: 21px;
     padding: 12px 57px 12px 56px;
-
 }
 
 .info-user {
@@ -1209,7 +1203,6 @@ img {
     margin-left: 44px;
     margin-right: 29px;
 }
-
 
 .info-user-div svg {
     position: absolute;
@@ -1280,7 +1273,6 @@ img {
     top: 3px;
 }
 
-
 .main-heading {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
@@ -1328,6 +1320,10 @@ img {
     line-height: 18px;
 }
 
+.sorting .active-sorting {
+    border: none;
+}
+
 .sorting-type {
     margin-left: 70px;
     margin-right: 65px;
@@ -1340,6 +1336,11 @@ img {
 .sorting li:hover {
     color: var(--basic-black);
     border-bottom: 1px solid var(--basic-red);
+}
+
+.sorting .active-sorting a {
+    color: var(--basic-red);
+    border: none;
 }
 
 .arrow-svg path:hover {
@@ -1359,11 +1360,6 @@ img {
     list-style-type: none;
     color: var(--basic-opacity-color-black);
     text-transform: uppercase;
-}
-
-.sorting span {
-    color: var(--basic-red);
-    line-height: 18px;
 }
 
 .arrow-down svg {
@@ -1694,6 +1690,10 @@ img {
     display: block;
 }
 
+.card:focus-within .change-page {
+    display: block;
+}
+
 .card:hover {
     box-shadow: 0px 4px 20px var(--basic-shadow-black);
 }
@@ -1723,7 +1723,6 @@ img {
 
 .div-last-price {
     margin-bottom: 21px;
-    background-repeat: no-repeat;
     height: 39px;
     margin: 13px 34px 21px 45px;
 }
@@ -1749,7 +1748,6 @@ img {
     left: 0;
     top: 0;
     display: none;
-
 }
 
 .change-page-first {
@@ -1909,7 +1907,6 @@ img {
     line-height: 24px;
 }
 
-
 /* interactive elements */
 
 .buy-oder:hover {
@@ -1943,7 +1940,6 @@ img {
     color: var(--basic-gray);
 }
 
-
 .login a:active path {
     fill:var(--basic-gray);
 }
@@ -1975,11 +1971,11 @@ img {
     color: var(--basic-gray);
 }
 
-.menu-navigation a:hover {   
+.menu-navigation a[href]:hover {   
     background-color: var(--basic-darkblue);
 }
 
-.menu-navigation a:active {
+.menu-navigation a[href]:active {
     color: var(--basic-special-color-gray);
     background-color: var(--basic-background-active-blue);
 }
@@ -2001,6 +1997,7 @@ img {
 .sorting a:active {
     color: var(--basic-red);
     text-decoration: none;
+    border: none;
 }
 
 .one-two-three li:hover {
@@ -2012,11 +2009,20 @@ img {
     border: 1px solid var(--basic-red);
 }
 
-.slider-item .open-catalog:hover {
+.slides .open-catalog:hover {
     background-color: var(--basic-red-special);
 }
 
-.slider-item .open-catalog:active {
+.slides .open-catalog:active {
+    background-color: var(--basic-background-red);
+    box-shadow: 0px 4px 4px var(--basic-special-color-black);
+}
+
+.shared-button:hover {
+    background-color: var(--basic-red-special);
+}
+
+.shared-button:active {
     background-color: var(--basic-background-red);
     box-shadow: 0px 4px 4px var(--basic-special-color-black);
 }
@@ -2052,14 +2058,14 @@ img {
 
 .services button:active {
     color: var(--basic-blue);
-    background-color: var(--basic-white); /* Нужно убрать рамку при нажатии */
+    background-color: var(--basic-white); 
 }
 
-.menu-bottom a:hover {
+.menu-bottom a[href]:hover {
     text-decoration: underline;
 }
 
-.bottom-white-menu a:active {
+.bottom-white-menu a[href]:active {
     color: var(--basic-special-color-double-gray);
     text-decoration: none;
 }
@@ -2134,7 +2140,6 @@ img {
 
 .company-partners p {
     line-height: 24px;
-
 }
 
 .company-partners ul {
@@ -2311,7 +2316,6 @@ img {
     line-height: 23px;
     margin: 0;
     padding-left: 30px;
-
 }
 
 .company-info {
